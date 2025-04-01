@@ -1,101 +1,34 @@
-# **OSSF Project/WG Name**
+# Open Source Project Security Assessments
 
-[Brief description of the initiative]
+In response to a rising demand for standardized security review of open source projects, the Open Source Project Security (OSPS) Assessments project provides a three-tier model for assessing the security state of open source software.
 
+## Approach
 
-## 
-**Motivation**
+OSPS Assessments may come in one of three types: self-assessment, joint-assessment, or third-party assessment. This three-tiered approach is intended to reduce complexity through a "shift left" approach that encourages participation from project maintainers while also reducing overall cost and complexity.
 
-[Background / use cases of the problem to be solved]
+### Getting Started
 
+Visit [the Getting Sarted guide](./guidance/getting-started.md) to determine your first steps, including which of the three assessments is right for your situation. In most cases, it is recommended to start at the lowest level, self-assessments, and work up from there.
 
-## 
-**Objective**
+Continue reading below for a rapid overview of each assessment type.
 
-[What is to be achieved with this initiative]
+### Level 1: Self-Assessment
 
-[OKRs - OPTIONAL]
+A self-assessment allows a software project to evaluate its own security posture using a standardized process. This helps identify strengths, areas for improvement, and potential risks without external influence. The results can serve as a foundation for internal discussions, decision-making, and future external reviews.
 
+### Level 2: Joint Assessment
 
-## 
-**Scope**
+A joint-assessment is a collaborative security review conducted with external security experts or a designated working group. This approach provides an opportunity for project teams to receive constructive feedback, validate security practices, and gain insights from experienced reviewers. The process often includes structured discussions, evidence-based evaluations, and actionable recommendations for strengthening security practices.
 
-[What is in and out of scope]
+### Level 3: Third-Party Conformity Assessment
 
+A third-party conformity assessment involves an independent security audit conducted by external assessors to evaluate a project’s adherence to established security guidelines. This assessment provides an objective validation of security controls, policies, and implementations, ensuring alignment with industry frameworks and regulatory requirements. The process typically includes in-depth reviews, testing, and verification of security measures, culminating in a formal report or certification.
 
-## 
-**Prior Work**
-
-
-
-*   List of prior and/or related projects
-
-## 
-**Active Projects**
-
-[Optional]
-
-## 
-**Inactive Projects**
-
-[Optional]
-
-# 
-**Get Involved**
-
-*   Official communications occur on the [ADD LINK TO YOUR WG MAILING LIST] (ex: https://lists.openssf.org/g/openssf-tac/topics).  \
-[Manage your subscriptions to Open SSF mailing lists](https://lists.openssf.org/g/main/subgroups).
-*   [Add Slack information if availabable]
-
-## 
-
-
-### 
-**Quick Start**
-
-*   Areas that need contributions
-*   Build information if applicable
-*   Where to file issues
-*   Etc.
-
-## 
-**Meeting times**
-
-[TODO: Update with your WG meeting details]
-*   Every other Tuesday @ 10:00am PST (Link to calendar invite)
-*   [Meeting Minutes](https://docs.google.com/document/d/1uXQI1vI5_HyOvxHMexrnTY_ruBrynbPl5yOd1UM4g3A/edit#heading=h.yworp6sxzb6g)
-
-# 
-**Governance**
-
-[TODO: Update this link to your specific CHARTER.md file]
-The [CHARTER.md](https://github.com/ossf/project-template/blob/main/CHARTER.md) outlines the scope and governance of our group activities.
-
-
-[OPTIONAL]
-*   Lead name 
-*   Co-Lead name
-
-#
-**Intellectual Property**
-
-In accordance with the [OpenSSF Charter (PDF)](https://charter.openssf.org/), work produced by this group is licensed as follows:
-
-[TODO: Select below the applicable license(s), delete those that don't apply, and update the LICENSE file accordingly. For specification development refer to the specific instructions on the [Community Specification Getting Started page](https://github.com/CommunitySpecification/1.0/blob/main/..Getting%20Started.md).
-
-Note that for source code, instead of Apache, you may choose to use the MIT License available at https://opensource.org/licenses/MIT. Otherwise, no other license than those listed here may be used without approval from the Governing Board.]
-
-1. Software source code
-* Apache License, Version 2.0, available at https://www.apache.org/licenses/LICENSE-2.0;
-2. Data
-* Any of the Community Data License Agreements, available at https://www.cdla.io;
-3. Specifications
-* Community Specification License, Version 1.0, available at https://github.com/CommunitySpecification/1.0
-4. All other Documentation
-* Creative Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/
-
-**Antitrust Policy Notice**
+## Antitrust Policy Notice
 
 Linux Foundation meetings involve participation by industry competitors, and it is the intention of the Linux Foundation to conduct all of its activities in accordance with applicable antitrust and competition laws. It is therefore extremely important that attendees adhere to meeting agendas, and be aware of, and not participate in, any activities that are prohibited under applicable US state, federal or foreign antitrust and competition laws.
 
 Examples of types of actions that are prohibited at Linux Foundation meetings and in connection with Linux Foundation activities are described in the Linux Foundation Antitrust Policy available at http://www.linuxfoundation.org/antitrust-policy. If you have questions about these matters, please contact your company counsel, or if you are a member of the Linux Foundation, feel free to contact Andrew Updegrove of the firm of Gesmer Updegrove LLP, which provides legal counsel to the Linux Foundation.
+
+[how the project operates]: governance/GOVERNANCE.md
+[how to report security-related issues]: governance/SECURITY.md
