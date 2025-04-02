@@ -1,14 +1,14 @@
 # Open Source Project Security Assessments
 
-In response to a rising demand for standardized security review of open source projects, the Open Source Project Security (OSPS) Assessments project provides a three-tier model for assessing the security state of open source software.
+In response to a rising demand for standardized security review of open source projects, the Open Source Project Security (OSPS) Assessments project provides a tiered model for assessing the security state of open source software.
 
 ## Approach
 
-OSPS Assessments may come in one of three types: self-assessment, joint-assessment, or third-party assessment. This three-tiered approach is intended to reduce complexity through a "shift left" approach that encourages participation from project maintainers while also reducing overall cost and complexity.
+OSPS Assessments may come in one of two types: self-assessment or joint-assessment. This tiered approach is intended to reduce complexity through a "shift left" approach that encourages participation from project maintainers while also reducing overall cost and complexity.   
 
 ### Getting Started
 
-Visit [the Getting Sarted guide](./guidance/getting-started.md) to determine your first steps, including which of the three assessments is right for your situation. In most cases, it is recommended to start at the lowest level, self-assessments, and work up from there.
+Visit [the Getting Sarted guide](./guidance/getting-started.md) to determine your first steps, including which of the assessments is right for your situation. In most cases, it is recommended to start at the lowest level, self-assessments, and work up from there.
 
 Continue reading below for a rapid overview of each assessment type.
 
@@ -19,10 +19,6 @@ A self-assessment allows a software project to evaluate its own security posture
 ### Level 2: Joint Assessment
 
 A joint-assessment is a collaborative security review conducted with external security experts or a designated working group. This approach provides an opportunity for project teams to receive constructive feedback, validate security practices, and gain insights from experienced reviewers. The process often includes structured discussions, evidence-based evaluations, and actionable recommendations for strengthening security practices.
-
-### Level 3: Third-Party Conformity Assessment
-
-A third-party conformity assessment involves an independent security audit conducted by external assessors to evaluate a project’s adherence to established security guidelines. This assessment provides an objective validation of security controls, policies, and implementations, ensuring alignment with industry frameworks and regulatory requirements. The process typically includes in-depth reviews, testing, and verification of security measures, culminating in a formal report or certification.
 
 ## Antitrust Policy Notice
 
