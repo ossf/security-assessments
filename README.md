@@ -6,7 +6,15 @@ In response to a rising demand for standardized security review of open source p
 
 Both a security assessment and a security audit help to understand the security of a system and play different, but overlapping, roles.   A security audit focuses primarily at looking for security defects in a project's implementation or a deviation from established best practices.   In contrast, an assessment focuses on thinking about what a reasonable project of this type might be expected to provide in terms of security properties and potential gotchas for users.
 
-To make this clearer, consider a non-technical example of a presentation tool, as people commonly use when giving a talk.   A security audit would point out defects in manufacturing.   Both an assessment and an audit would likely flag an issues like the use of a hardcoded security key that is shared for all instances of the clicker.   The assessment would catch that the wireless communication in the presentation tool can make it easy to track the owner and also give guidance on ways to mitigate this.   The assessment may also catch subtle issues like a laser pointer being considered a weapon in countries like Switzerland and thus the inclusion of this meaning the presenter tool is banned from air travel in that country.
+To make this clearer, consider a non-technical example of a digital hotel room key, as commonly used in modern hotels. 
+
+A security audit would point out defects in manufacturing, such as inconsistent chip embedding that could lead to premature failure or the difficulty of auditing a batch. 
+
+An assessment would catch that the wireless communication in the digital key can make it easy to track guests' movements around the property and also give guidance on ways to mitigate this privacy concern.
+
+Both an assessment and an audit would likely flag issues like the use of a hardcoded security key that is shared across multiple room keys within the hotel system.
+
+The assessment may also catch subtle issues, such as the restrictions on the key's radio frequency in certain countries, which makes the hotel's key system non-compliant with local regulations in those jurisdictions.
 
 So audits are more about a failure to build software correctly and follow best practices.   Assessments are looking at whether the security properties of the software make sense and give suggestions for improvement.
 
