@@ -2,7 +2,7 @@
 
 **[< Previous: Security Basics](./security-basics.md)**
 
-Security is one of the most critical properties to have in computing today. Unfortunately, it is also one of the most misunderstood. A common mistake people make it to tout something as “secure” or “insecure”. This doesn’t make a lot of sense because it is missing an important context: the scenario.
+Security is one of the most critical properties to have in computing today. Unfortunately, it is also one of the most misunderstood. A common mistake people make is to tout something as “secure” or “insecure”. This doesn’t make a lot of sense because it is missing an important context: the scenario.
 
 The scenario in many non-security real world situations is something that is implicitly defined. For example, if I say “my car is reliable'', you can assume that it almost certainly will not break down on the way to work. However, you should not expect that a “reliable” car would make a good submarine or perform well on Mars. Performing well on Mars is just not what is implied by a general statement of a car’s reliability.
 
@@ -13,7 +13,7 @@ While usually, one could just look at likely scenarios and determine the rarity 
 >
 > A fundamental aspect of threat modeling is the ability to frame and understand the various scenarios in which a system will operate. A key question that often guides this understanding is, "What are the intended use cases of a system, and where should it not be used?" This line of inquiry doesn't just establish the parameters within which a system is expected to perform but also helps to define the boundaries of its reliable operation.
 
-Challenging yourself and your team to identify these “out of scope” scenarios or non-uses can be revealing. It prompts a closer examination of implicit assumptions and potential weaknesses. For instance, you could consider a system you're familiar with and ask, "What would be the 'submarine or outer space’' equivalent for your system?" Is syscall inspection suited for inspection of ingress traffic? Is a mutating admission webhook served at enforcing kernel security? This kind of hypothetical questioning can uncover overlooked vulnerabilities and lead to a more robust design.
+Challenging yourself and your team to identify these “out of scope” scenarios or non-uses can be revealing. It prompts a closer examination of implicit assumptions and potential weaknesses. For instance, you could consider a system you're familiar with and ask, "What would be the 'submarine or outer space' equivalent for your system?" Is syscall inspection suited for inspection of ingress traffic? Is a mutating admission webhook effective in enforcing kernel security? This kind of hypothetical questioning can uncover overlooked vulnerabilities and lead to a more robust design.
 
 This exercise not only broadens the scope of traditional threat modeling but also encourages a proactive approach to security. By contemplating extreme 'out-of-scenario' uses, we can better understand the full range of risks a system may face and fortify it against more than just the probable threats.
 
@@ -21,4 +21,4 @@ One way that we reason about security in a rigorous way is a process called thre
 
 Note that the term bug and vulnerability are not the same thing. While many bugs do enable an attacker to launch a successful attack, many bugs are just anomalous, benign behavior.  Similarly, a design flaw can cause a correctly implemented system to have a vulnerability. So, there need not be a bug in order to have a vulnerability.
 
-**[> Next Up: Threat Modeling Actors](./threat-modelling/actors.md)**
+**[> Next Up: Threat Modeling Actors](./threat-modeling/actors.md)**
