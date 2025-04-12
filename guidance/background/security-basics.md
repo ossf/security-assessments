@@ -32,4 +32,4 @@ For example, the principle of simplicity indicates that the simpler the componen
 
 So, instead think about the principles when looking at a design and reason if the security would be better or worse if they were followed. Usually, following the design principles will guide you toward security.
 
-**[> Next Up: Threat Modeling 101](./threat-modelling-101.md)**
+**[> Next Up: Threat Modeling 101](./threat-modeling-101.md)**
