@@ -43,7 +43,7 @@ List any security standards or compliance frameworks the project adheres to (e.g
 
 ### Security Documentation
 
-Provide links to the project's security-related documentation. At a minimum, include a link to security-insights.yaml or any other security policies, threat models, or vulnerability management resources.
+Provide links to the project's security-related documentation. At a minimum, include a link to security-insights.yml or any other security policies, threat models, or vulnerability management resources.
 
 As usual, formatting is less important than clear communication with your stakeholders. If this is better broken into a table or sub-sections, feel free to make that decision for your use case.
 
