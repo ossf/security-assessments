@@ -8,7 +8,7 @@ OSPS Assessments may come in one of two types: self-assessment or joint-assessme
 
 ### Getting Started
 
-Visit [the Getting Sarted guide](./guidance/getting-started.md) to determine your first steps, including which of the assessments is right for your situation. In most cases, it is recommended to start at the lowest level, self-assessments, and work up from there.
+Visit [the Getting Started guide](./guidance/getting-started.md) to determine your first steps, including which of the assessments is right for your situation. In most cases, it is recommended to start at the lowest level, self-assessments, and work up from there.
 
 Continue reading below for a rapid overview of each assessment type.
 
