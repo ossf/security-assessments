@@ -11,8 +11,8 @@ This also helps to explain why it is so important to design security into a syst
 > [!NOTE]
 > From Graphs to Guards, Commentary by Marco De Benedictis
 >
-> Attack Graphs capture the defenders’ mindset and working process, and so are time-consuming and require significant effort to generate to ensure correctness and the completeness of the paths that an attacker cotuld exploit to achieve a potential goal.
-> We can understand if tactical security controls are addressing the most relevant threats by cross-referencing the attack graphs back to the proposed mitigations. This can be practically achieved by overlaying security countermeasures at each individual step, and visually inspecting the branches that aren't properly covered by remeditations.
+> Attack Graphs capture the defenders’ mindset and working process, and so are time-consuming and require significant effort to generate to ensure correctness and the completeness of the paths that an attacker could exploit to achieve a potential goal.
+> We can understand if tactical security controls are addressing the most relevant threats by cross-referencing the attack graphs back to the proposed mitigations. This can be practically achieved by overlaying security countermeasures at each individual step, and visually inspecting the branches that aren't properly covered by remediations.
 > This visualization allows us to evaluate the effectiveness of our security assessment, and to surface the residual risks by identifying the branches with insufficient security controls and suggesting remediations that satisfy the greatest number of branches at once, taking into account their ease of maintenance, business requirements, and budget implications.
 
 It is important to have a system that degrades gracefully under attack. This means that an attacker must compromise many parts of the system that are well protected and compartmentalized from each other in order to do substantial harm. So, think of how to make a system that slowly loses security properties as compromises occur, rather than one that has only “secure” and “insecure” states.
