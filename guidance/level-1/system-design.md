@@ -27,14 +27,14 @@ Capturing all of these mechanisms is crucial, as these can prevent an attacker f
 Actions describe the processes and interactions that occur between actors in order to deliver functionality.
 
 These are the steps that a project performs in order to provide some service
-or functionality.  These steps are performed by different actors in the system.
+or functionality. These steps are performed by different actors in the system.
 Note, that an action need not be overly descriptive at the function call level.
 It is sufficient to focus on the security checks performed, use of sensitive
 data, and interactions between actors to perform an action.
 
 For example, the access server receives the client request, checks the format,
 validates that the request corresponds to a file the client is authorized to
-access, and then returns a token to the client.  The client then transmits that
+access, and then returns a token to the client. The client then transmits that
 token to the file server, which, after confirming its validity, returns the file.
 
 If you have a more complex system, you may want to create a chart using a free tool such as
@@ -47,10 +47,10 @@ If you have a more complex system, you may want to create a chart using a free t
 
 ### Critical Security Components
 
-This is a listing critical security components of the project with a brief
-description of their importance.  It is recommended these be used for threat modeling.
+This is a listing of critical security components of the project with a brief
+description of their importance. It is recommended these be used for threat modeling.
 These are considered critical design elements that make the product itself secure and
-are not configurable.  Projects are encouraged to track these as primary impact items
+are not configurable. Projects are encouraged to track these as primary impact items
 for changes to the project.
 
 Each critical component should be listed with a brief description of its importance.
@@ -63,8 +63,8 @@ Examples:
 ### Security-Relevant Features
 
 This is a listing of security relevant components of the project with
-brief description.  These are considered important to enhance the overall security of
-the project, such as deployment configurations, settings, etc.  These should also be
+brief description. These are considered important to enhance the overall security of
+the project, such as deployment configurations, settings, etc. These should also be
 included in threat modeling.
 
 Each security-relevant component should be documented with a description of its role in security.
