@@ -8,7 +8,7 @@
 
 This guidance describes security assessments, including what a security assessment is, how it differs from a security audit, how to perform a security assessment, and how to use a completed assessment.
 
-These contents are heavily informed by the Security Assessment process developed by the CNCF Security Technical Advisory Group and authored by Justin Cappos (STAG Technical Lead). This draws on years of compound experience analyzing and evaluating security products across a wide array of domains. The examples in this text draw from both non-technical anecdotes and a variety of detailed technical examples from Linux Foundation projects in the cloud native space.
+These contents are heavily informed by the [Security Assessment process](https://tag-security.cncf.io/community/assessments/) developed by the CNCF Security Technical Advisory Group and authored by Justin Cappos (STAG Technical Lead). This draws on years of compound experience analyzing and evaluating security products across a wide array of domains. The examples in this text draw from both non-technical anecdotes and a variety of detailed technical examples from Linux Foundation projects in the cloud native space.
 
 It is recommended to follow the guide one step at a time, rather than seeking to read and understand the process in completeness. You will internalize more by attempting the exercises yourself.
 
@@ -22,7 +22,7 @@ Please do a quick read of the knowledge base before working with reviewers. If y
 
 ### You want to learn about threat modeling and software security
 
-Many are helpful to learn about threat modeling and how to assess the security of general projects. Perhaps the least relevant part are the portions of this book that relate to the specifics of Security Assessments. However, those sections can serve as an example of how to implement some of the ideas in the rest of the book in the cloud native space.
+Many are helpful to learn about threat modeling and how to assess the security of general projects. Perhaps the least relevant part are the portions of [this book](https://tag-security.cncf.io/community/assessments/Open_and_Secure.pdf) that relate to the specifics of Security Assessments. However, those sections can serve as an example of how to implement some of the ideas in the rest of the book in the cloud native space.
 
 ### You want to lead or participate in an assessment
 
