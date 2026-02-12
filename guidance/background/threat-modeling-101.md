@@ -12,10 +12,10 @@ While usually, one could just look at likely scenarios and determine the rarity 
 > **Defining Scenarios**
 >
 > A fundamental aspect of threat modeling is the ability to frame and understand the various scenarios in which a system will operate. A key question that often guides this understanding is, "What are the intended use cases of a system, and where should it not be used?" This line of inquiry doesn't just establish the parameters within which a system is expected to perform but also helps to define the boundaries of its reliable operation.
-
-Challenging yourself and your team to identify these “out of scope” scenarios or non-uses can be revealing. It prompts a closer examination of implicit assumptions and potential weaknesses. For instance, you could consider a system you're familiar with and ask, "What would be the 'submarine or outer space' equivalent for your system?" Is syscall inspection suited for inspection of ingress traffic? Is a mutating admission webhook effective in enforcing kernel security? This kind of hypothetical questioning can uncover overlooked vulnerabilities and lead to a more robust design.
-
-This exercise not only broadens the scope of traditional threat modeling but also encourages a proactive approach to security. By contemplating extreme 'out-of-scenario' uses, we can better understand the full range of risks a system may face and fortify it against more than just the probable threats.
+>
+> Challenging yourself and your team to identify these “out of scope” scenarios or non-uses can be revealing. It prompts a closer examination of implicit assumptions and potential weaknesses. For instance, you could consider a system you're familiar with and ask, "What would be the 'submarine or outer space' equivalent for your system?" Is syscall inspection suited for inspection of ingress traffic? Is a mutating admission webhook effective in enforcing kernel security? This kind of hypothetical questioning can uncover overlooked vulnerabilities and lead to a more robust design.
+>
+> This exercise not only broadens the scope of traditional threat modeling but also encourages a proactive approach to security. By contemplating extreme 'out-of-scenario' uses, we can better understand the full range of risks a system may face and fortify it against more than just the probable threats.
 
 One way that we reason about security in a rigorous way is a process called threat modeling. Threat modeling is sort of like setting up a game between the defender and the attacker. The threat model describes the properties you are trying to provide and the capabilities of the attacker. If the attacker is able to find a way to defeat the defender’s desired security properties, this is a viable avenue of attack. We call such a successful attack, a compromise, and the weakness that lets an attack occur, a vulnerability.
 

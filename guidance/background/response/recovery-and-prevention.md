@@ -33,8 +33,8 @@ To consider another example, let’s say that TrashPanda Bank has a super alarm 
 > Overprotection Sometimes Considered Harmful
 >
 > While the example above is a bit silly, adding a security mechanism does sometimes degrade security in practice. It used to be thought that changing passwords frequently was an important security practice. It was later shown that this made users choose weaker passwords, reuse passwords more often, and led to companies providing more vulnerable means to recover lost passwords.
-
-However, this all being said, there is actually a practical hierarchy of what defender’s capabilities are usually preferable. Usually prevention is the best because it actually stops the negative outcome from occurring at all. Recovery is really, really important for all but the most unlikely of events. Note that manual effort for recovery is common which is often reasonable. However, this implies that this also should be a rare act to avoid overburdening the poor person who does the recovery. Detection is important, but can be overwhelming if it is overly broad. If you can detect problems, but cannot forensically trace the cause, it can lead to a lot of extra work.
+>
+> However, this all being said, there is actually a practical hierarchy of what defender’s capabilities are usually preferable. Usually prevention is the best because it actually stops the negative outcome from occurring at all. Recovery is really, really important for all but the most unlikely of events. Note that manual effort for recovery is common which is often reasonable. However, this implies that this also should be a rare act to avoid overburdening the poor person who does the recovery. Detection is important, but can be overwhelming if it is overly broad. If you can detect problems, but cannot forensically trace the cause, it can lead to a lot of extra work.
 
 So, while it is not always true, in general:
 
