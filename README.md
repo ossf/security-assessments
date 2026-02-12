@@ -28,3 +28,7 @@ Examples of types of actions that are prohibited at Linux Foundation meetings an
 
 [how the project operates]: governance/GOVERNANCE.md
 [how to report security-related issues]: governance/SECURITY.md
+
+---
+
+This content evolved from the [CNCF TAG Security Security Assessment book](https://github.com/cncf/tag-security/blob/5fb87f474808e02e7786d7c5548e65ffc1a6e29e/community/assessments/Open_and_Secure.pdf) (now archived).  This project aims to extend that guidance to apply to any open-source project, while preserving the experience and expertise which made the CNCF's security assessment program valuable.
