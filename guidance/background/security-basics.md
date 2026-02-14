@@ -2,7 +2,7 @@
 
 **[< Previous: Getting Started](../getting-started.md)**
 
-There are so many foundational concepts and technologies you need to understand to reason about security of an application or library, that describing them well would require another multiple books of material (and they have been published). Rather than replicate that material here, the reader is directed to resources that contain this information. If you encounter an unfamiliar term in the text, kindly take the time to look it up and understand it.
+There are many foundational concepts and technologies needed to understand to reason about security of an application or library, and there are countless other resources available to elevate understanding on various topics. Where possible this content will link out to existing content rather than replicate it. If you encounter an unfamiliar term in the text, pause to establish basic understanding of the term before continuing.
 
 Most fundamentally, you should understand key concepts like integrity, non-repudiation, privacy, authentication, authorization, and trust. The [Cloud Native Security Lexicon](https://contribute.cncf.io/community/tags/security-and-compliance/publications/security-lexicon) has a quick overview of basic terms and concepts in computer security which covers these items.
 
