@@ -1,6 +1,6 @@
 # Security Basics
 
-**[< Previous: Security Assessements and Audits](../assessments-and-audits.md)**
+**[< Previous: Security Assessements and Audits](./assessments-and-audits.md)**
 
 There are many foundational concepts and technologies needed to understand to reason about security of an application or library, and there are countless other resources available to elevate understanding on various topics. Where possible this content will link out to existing content rather than replicate it. If you encounter an unfamiliar term in the text, pause to establish basic understanding of the term before continuing.
 

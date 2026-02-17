@@ -17,16 +17,12 @@ In general, the earlier an assessment is done, the more secure the software will
 
 ## Which assessment is right for me?
 
-At a glance, it may be easiest to review your capabilities and requirements to determine your next assessment level.
+It is typically advised to do a self assessment prior to a joint assessment, because the latter builds on the former.
 
 1. A **self-assessment** is the least complex form, ideal for use during feature planning, or in preparation for a higher level assessment.
 2. A **joint assessment** is more involved than a self-assessment, but is typically achievable for a small team of volunteers who are familiar with the project.
-3. A **conformity assessment** is the most involved process, involving dozens of hours from security and compliance experts, ideal for projects that want to demonstrate conformity with a regulation, standard, or policy.
-
-When possible, it is advisable to "stair-step" the assessment process to spread the work over time. A conformity assessment is typically a very time consuming and costly activity, but that investment can be used more effectively if some pre-work is done in the form of a self- or joint assessment.
 
 You can read more about the requirements, process, and outputs from each level:
 
-- **[> Get Started: Self Assessment](../../level-1/getting-started-self-assessment.md)**
-- **[> Get Started: Joint Assessment](../../level-2/getting-started-joint-assessment.md)**
-- **[> Get Started: Conformity Assessment](../../level-3/getting-started-conformity-assessment.md)**
+- **[> Get Started: Self Assessment](../../self/quickstart.md)**
+- **[> Get Started: Joint Assessment](../../joint/quickstart.md)**

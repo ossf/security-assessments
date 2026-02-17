@@ -8,7 +8,7 @@ OSPS Assessments may come in one of two types: self-assessment or joint-assessme
 
 ### Getting Started
 
-Visit [the Getting Started guide](./guidance/getting-started.md) to determine your first steps, including which of the assessments is right for your situation. In most cases, it is recommended to start at the lowest level, self-assessments, and work up from there.
+Visit [the Getting Started guide](./guidance/background/getting-started.md) to determine your first steps, including which of the assessments is right for your situation. In most cases, it is recommended to start at the lowest level, self-assessments, and work up from there.
 
 Continue reading below for a rapid overview of each assessment type.
 
@@ -16,9 +16,13 @@ Continue reading below for a rapid overview of each assessment type.
 
 A self-assessment allows a software project to evaluate its own security posture using a standardized process. This helps identify strengths, areas for improvement, and potential risks without external influence. The results can serve as a foundation for internal discussions, decision-making, and future external reviews.
 
-### Level 2: Joint Assessment
+[> Start Creating a Self Assessment Now](./guidance/self-assessment/creating-document.md)
+
+### Level 2: Joint-Assessment
 
 A joint-assessment is a collaborative security review conducted with external security experts or a designated working group. This approach provides an opportunity for project teams to receive constructive feedback, validate security practices, and gain insights from experienced reviewers. The process often includes structured discussions, evidence-based evaluations, and actionable recommendations for strengthening security practices.
+
+[> Start Creating a Joint-Assessment Now](./guidance/joint-assessment/creating-document.md)
 
 ## Antitrust Policy Notice
 
@@ -31,4 +35,4 @@ Examples of types of actions that are prohibited at Linux Foundation meetings an
 
 ---
 
-This content evolved from the [CNCF TAG Security Security Assessment book](https://github.com/cncf/tag-security/blob/5fb87f474808e02e7786d7c5548e65ffc1a6e29e/community/assessments/Open_and_Secure.pdf) (now archived).  This project aims to extend that guidance to apply to any open-source project, while preserving the experience and expertise which made the CNCF's security assessment program valuable.
+This content evolved from the CNCF TAG Security's book _[Open and Secure](https://github.com/cncf/tag-security/blob/5fb87f474808e02e7786d7c5548e65ffc1a6e29e/community/assessments/Open_and_Secure.pdf)_ (now archived).  This project aims to extend that guidance to apply to any open-source project, while preserving the experience and expertise which made the CNCF's security assessment program valuable.
