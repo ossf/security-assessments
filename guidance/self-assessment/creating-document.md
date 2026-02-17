@@ -1,4 +1,4 @@
-# Creating Your Self Assessment Document
+# Creating Your Security Self Assessment Document
 
 Before we dive in to the contents of the assessment, let's consider how and where it will be published. This is not a critical or essential consideration, but it will make things easier if you can lock this in sooner rather than later.
 
