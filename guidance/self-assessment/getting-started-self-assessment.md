@@ -48,4 +48,4 @@ Here are the items we’ll be creating:
 
 If you feel like you aren’t ready to begin with your self-assessment, consider why that might be the case. If you feel that your project isn’t ready, or you don’t have all the answers right now, don’t let that stop you from starting! Simply leave notes along the way so that you have a strong first iteration of the self-assessment.
 
-**[> Next Up: Scope](./scope.md)**
+**[> Next Up: Header Content](./header.md)**

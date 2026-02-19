@@ -20,4 +20,4 @@ For Markdown-based documentation, you can create self-referencing links within t
 
 Expect to revisit and update the table of contents after adding content. If you introduce new subsections for complex topics, be sure to reflect those changes here. If your document significantly expands upon the template, AI tools may assist in generating or updating the table of contents efficiently.
 
-**[> Next Up: Metadata](./metadata.md)**
+**[> Next Up: Metadata Content](./metadata.md)**

@@ -1,6 +1,6 @@
 # Project Overview
 
-**[< Previous: Metadata](./metadata.md)**
+**[< Previous: Metadata Content](./metadata.md)**
 
 This section introduces your project and its purpose, helping reviewers quickly understand its significance and context.
 
