@@ -1,6 +1,6 @@
 # Threat Modeling: Goals
 
-**[< Previous: Actions](./actions)**
+**[< Previous: Actions](./actions.md)**
 
 <!-- TODO: This section is titled "goals," but I don't understand why. It's about bad assumptions -->
 
@@ -38,6 +38,7 @@ In practice, contests like the ones that NIST holds to choose cryptographic algo
 
 After SPECTRE and MELTDOWN, people in the community realized that there are some ways to use rare cache / memory error behaviors to bypass security protections. For example, a program could read memory in the operating system kernel or in another program. A series of defensive code changes now makes these attacks infeasible on modern hardware (as we understand it). The assumption that memory protections work is common not because it is universally thought that memory protection will absolutely hold in all cases, but largely because not having this assumption makes it too challenging to design security systems. It essentially makes it infeasible to do compartmentalization on a single piece of computing hardware and may make it feasible to cause information disclosure from any component on the same physical hardware. As this is currently an area of active research by hardware security researchers and chip makers, the protections and our understanding of the risks in this domain are likely to evolve over time.
 
+> [!IMPORTANT]
 > **Future-proofing While Maintaining Compatibility**
 >
 > Note that today, these assumptions are being relaxed by some modern security systems like TUF. For example, TUF supports multiple cryptographic algorithms and has a built-in way to add and remove cryptographic algorithm support while maintaining security properties. This enables secure migration to new algorithms either proactively, or as the need arises.
@@ -46,7 +47,12 @@ After SPECTRE and MELTDOWN, people in the community realized that there are some
 
 ### An attacker cannot hack a specific component or system
 
-Modern systems tend to have so much code and tend to use so many libraries, that this just isn’t a reasonable expectation. Even a “proven to be secure” microkernel like SeL4 has had security bugs found in it [SeL4 issue #85, SeL4 issue #86, seL4 Version 9.0.0 Release Notes]. It is important to assume code could have bugs, especially large components, and to design your system to have different isolated compartments so that your system’s security will degrade gracefully when components are successfully breached. This assumption seems to be on the way out, but some systems being created today do still use this assumption. You should assume that such compromises are a matter of when, not if [TAG Security Catalog of Supply Chain Compromises].
+Modern systems tend to have so much code and tend to use so many libraries, that this just isn’t a reasonable expectation. Even a “proven to be secure” microkernel like SeL4 has had security bugs found in it [[SeL4 issue #85], [SeL4 issue #86], [seL4 Version 9.0.0 Release Notes]]. It is important to assume code could have bugs, especially large components, and to design your system to have different isolated compartments so that your system’s security will degrade gracefully when components are successfully breached. This assumption seems to be on the way out, but some systems being created today do still use this assumption. You should assume that such compromises are a matter of when, not if [TAG Security Catalog of Supply Chain Compromises].
+
+[SeL4 issue #85]: https://github.com/seL4/seL4/issues/85
+[SeL4 issue #86]: https://github.com/seL4/seL4/issues/86
+[SeL4 Version 9.0.0 Release Notes]: https://docs.sel4.systems/releases/sel4/9.0.0.html
+[TAG Security Catalog of Supply Chain Compromises]: https://contribute.cncf.io/community/tags/security-and-compliance/publications/catalog/
 
 ### A key or other secret will never be leaked, compromised, misgenerated, etc
 
@@ -59,6 +65,8 @@ This assumption isn’t actually a bad one for MFA that does not use SMS. An org
 ### The complexity of parsing code for a complex format is not particularly relevant
 
 This is a common mistake that organizations make, where the code to parse data formats or keys becomes a major liability. The number of X.509 certificate parsing errors alone that have led to security vulnerabilities is astonishing [MatrixSSL: Security Vulnerabilities]. A related problem in this space is that even just getting a format serialized into a consistent format is a more difficult challenge than many developers initially realize. So the complexity of the data communication and storage format should be a major concern, especially for sensitive API calls and components.
+
+[MatrixSSL: Security Vulnerabilities]: https://www.cvedetails.com/vulnerability-list/vendor_id-16019/product_id-35500/
 
 ### Operating system user access control protections like file permissions are an impassable barrier
 
@@ -85,7 +93,7 @@ In much the same way, antivirus software on client machines largely just helps t
 This is patently false, which is one reason why multi-factor authentication is an option or even a requirement for many systems. Strong password guidelines for users are important. Users should also be incentivized to use tools like password managers.
 
 > [!NOTE]
-> A Methodology for Identifying Discrepancies with Respect to Privacy Regulations, Commentary by Ragashree Shekar
+> **A Methodology for Identifying Discrepancies with Respect to Privacy Regulations**, Commentary by Ragashree Shekar
 >
 > In the current landscape, with more and more data generated from each of us through the surplus connected devices we use, it also gives an opportunity to gather more and more data about us and utilize it to enhance their business. It is about time privacy is engineered into each project we build that collects personal, health or protected user information not just to comply with the regulations, but also to protect user’s right to privacy. LINDDUN[1] is a privacy engineering framework that helps model the system, find and manage the threats associated with this system. LINDDUN categorizes the threats into 7 categories such as Linkability, Identifiability, Non-repudiation, Detectability, Disclosure of Information, Unawareness, and Non-compliance. Let’s look at each one of them:
 >
@@ -142,7 +150,7 @@ To aid in going through different cases, there is a model called STRIDE. STRIDE 
 | Escalation of privilege | Authorization            | Grants Unauthorized access     |
 
 > ![NOTE]
-> Tracking Trash Pandas with Data Flow Diagrams Commentary by Ann Wallace
+> **Tracking Trash Pandas with Data Flow Diagrams**, Commentary by Ann Wallace
 >
 > In my experience, a Data Flow Diagram (DFD) is invaluable for threat modeling, providing a detailed view of data management within a system to identify and mitigate security risks. DFDs give a thorough and detailed view of how data is managed within a system, which is critical for identifying, examining, and mitigating potential security risks.
 >

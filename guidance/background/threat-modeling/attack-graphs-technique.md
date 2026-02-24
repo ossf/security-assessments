@@ -33,7 +33,7 @@ graph TD;
 In the next stage, we can see that the goal of learning the combination can be achieved in two ways - finding the written combination and getting the combination from the target (who is an authorized individual possessing the combination to the safe) which can further be done in 4 ways. These represent the OR nodes. Success in any one of these attacks leads to success of the ultimate goal of opening the lock. One attack to retrieve the combination from the target includes eavesdropping, which needs the success of two attacks where the victim states the combination and the attacker listening to the conversation. Failure of either results in an unsuccessful attempt to break the lock open.
 
 > [!NOTE]
-> **Unraveling Attack Graphs, Commentary by Justin Cappos**
+> **Unraveling Attack Graphs**, Commentary by Justin Cappos
 >
 > Attack graphs were really helpful for me when I was first starting to threat model large systems and also are really helpful now when I don’t understand a system well. Today, I often can intuitively go through and enumerate the cases here because I’ve had enough practice. So, I rarely write out an attack graph. (I usually jump straight to attack matrices, which will be described later.)
 >
@@ -44,7 +44,7 @@ One problem with attack graphs is you don’t necessarily know how complete they
 There is a depth of material on attack trees that focuses on adding parameters of different types to them. They can do things like help you reason about what attackers with different skill sets / access / constraints might do in a system or how much an attack might cost an attacker. As you are working through examples, you may find it useful to refer to the following reference: Schneier, B. “Attack Trees.” Schneier on Security, Dr. Dobb's Journal, December 1999, https://www.schneier.com/academic/archives/1999/12/attack_trees.html.
 
 > [!NOTE]
-> Finding Business Value, Commentary from Jack Kelly
+> **Finding Business Value**, Commentary from Jack Kelly
 >
 > For some clients or colleagues Attack Graphs and Trees are a valued deliverable. They are most valued by visual learners and non-technical persons as a tangible representation of what is elaborated on in a Threat Matrix. An Attack Graph helps a reader easily follow from initial breach to the attacker’s goal, and identify which nodes on the graph may be a hotspot either for traversal to other goals, or is used in many possible routes to the same point of impact. This provides a quantifiable justification for the controls used to remediate the threat of attack.
 >

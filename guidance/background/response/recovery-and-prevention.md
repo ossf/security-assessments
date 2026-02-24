@@ -19,7 +19,7 @@ Another means to deal with an attack is simply to prevent it from being effectiv
 Note that you need to carefully be able to argue why you protect against a set of attacks. This includes in what scenarios an attacker is prevented from doing an action. Once again, being rigorous and clear about limitations are absolutely key.
 
 > [!IMPORTANT]
-> Aiming for Full Prevention
+> **Aiming for Full Prevention**
 >
 > Some modern systems provide prevention of only certain attacker actions, in only certain scenarios. They may prevent information from being valuable after a certain point of time or from a key from being exfiltrated after a successful attack. (See HSMs, the concept of perfect forward secrecy, and ephemeral keys, as examples.) These properties are certainly nice to have, but ideally you want full prevention as a goal.
 
@@ -30,7 +30,7 @@ A natural next thing to consider once you understand the different means by whic
 To consider another example, let’s say that TrashPanda Bank has a super alarm system that can detect when the view of any sensor is blocked momentarily. Unfortunately, TrashPanda Bank is set near a set of cherry blossom trees and when the blossoms fall, they block the sensors, leading to a ton of false alarms. Suppose that TrashPanda set the alarm to automatically ring the police when it was triggered. After being summoned several times, the police are unlikely to respond to alarms for TrashPanda in the future, leading to the police ignoring an alarm on the vault. So, in this case, the security system’s drawbacks may actually degrade security.
 
 > [!IMPORTANT]
-> Overprotection Sometimes Considered Harmful
+> **Overprotection Sometimes Considered Harmful**
 >
 > While the example above is a bit silly, adding a security mechanism does sometimes degrade security in practice. It used to be thought that changing passwords frequently was an important security practice. It was later shown that this made users choose weaker passwords, reuse passwords more often, and led to companies providing more vulnerable means to recover lost passwords.
 >

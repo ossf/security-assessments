@@ -9,7 +9,7 @@ To understand why, let’s go back to TrashPanda Bank and think about their secu
 This also helps to explain why it is so important to design security into a system from the start instead of trying to bolt it on afterwards. If you don’t design things well from the start, it is often impractical or even impossible to get the security properties you want later... at least without starting over.
 
 > [!NOTE]
-> From Graphs to Guards, Commentary by Marco De Benedictis
+> **From Graphs to Guards**, Commentary by Marco De Benedictis
 >
 > Attack Graphs capture the defenders’ mindset and working process, and so are time-consuming and require significant effort to generate to ensure correctness and the completeness of the paths that an attacker could exploit to achieve a potential goal.
 > We can understand if tactical security controls are addressing the most relevant threats by cross-referencing the attack graphs back to the proposed mitigations. This can be practically achieved by overlaying security countermeasures at each individual step, and visually inspecting the branches that aren't properly covered by remediations.

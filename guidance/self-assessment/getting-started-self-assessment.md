@@ -25,9 +25,9 @@ In this guide, we’re looking to secure an open source project repository. Simi
 
 This guide will walk you through the process of creating your own security self-assessment documentation.
 
-We will be following the recommendations provided by the Cloud Native Computing Foundation to their myriad of open source software projects. The standard of self-assessment is encouraged by TAG Security for sandbox and incubation projects, and it is incentivized by the Cloud Native Security Slam for all CNCF projects to revisit their self-assessment annually.
+We will be following the recommendations provided by the Cloud Native Computing Foundation to their myriad of open source software projects. The standard of self-assessment is required by the CNCF for incubating and graduating projects, and it is incentivized by the Cloud Native Security Slam for all CNCF projects to revisit their self-assessment annually.
 
-Anyone familiar with your project can contribute to the creation of the self-assessment, but it is important that the effort contains a high level of engagement from the project’s leadership—a full review and endorsement at minimum–to ensure that nothing is missed and that any findings are incorporated into the project roadmap.
+Anyone familiar with your project can contribute to the creation of the self-assessment, but it is important that the effort contains a high level of engagement from the project’s leadership—a full review and endorsement at minimum—to ensure that nothing is missed and that any findings are incorporated into the project roadmap.
 
 We will be also creating a self-assessment for our own little open source project—a text execution harness that has been on the back burner for too long, and is getting ready for new contributions. Now is a great time to evaluate the progress and gaps related to security!
 

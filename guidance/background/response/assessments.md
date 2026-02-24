@@ -10,8 +10,8 @@ Most importantly, if you are designing a security focused system, you need to un
 
 In general, the earlier an assessment is done, the more secure the software will be, and the easier it will be to adapt to any design or other changes that are uncovered by the assessment. So, do your best to start early!
 
-> [!INFO]
-> A Health Check and Path to Enhanced Security, Commentary by Ash Narkar
+> [!NOTE]
+> **A Health Check and Path to Enhanced Security**, Commentary by Ash Narkar
 >
 > The security assessment process really helped the OPA team understand the overall health of the project from a security perspective. The assessment identified areas of the project that could be improved for example better documentation around secure deployment practices, enhancing OPA's toolchain usability to reduce policy authoring related errors. The OPA project benefited from the recommendations and advice provided by the security experts at CNCF's TAG-Security and our on-going relationship with TAG-Security helps us gain insights into the latest security best practices thereby allowing us to continuously improve OPA's security posture.
 

@@ -9,7 +9,7 @@ Unfortunately, there really isn’t a solid way to know how likely certain event
 Realistically, you get the most value out of understanding roughly how likely things are 1-in-100 vs 1-in-a-million vs 1-in-a-trillion, etc. versus trying to put an exact number.
 
 > [!NOTE]
-> **The Thousandfold Misconception, Commentary by Justin Cappos**
+> **The Thousandfold Misconception**, Commentary by Justin Cappos
 > I worked with Evan Gilman, Matt Moyer, and Enrico Schiattarella from the SPIFFE / SPIRE team on a threat assessment and as part of it we tried to quantify risk. We each did this independently for aspects of the system; our answers often varied by more than 10. In fact, in one case it varied by more than a factor of 1000! After discussing these differences, we began to better understand ways in which our mental models differed about how the system could be deployed. This was a really useful exercise for us even though I don’t think any of us put a lot of faith that the values we ended up with are close to the real value.
 
 ## Expected Damage
@@ -25,7 +25,7 @@ For example, if something has a 1-in-100 chance of occurring on a specific day, 
 When addressing risks, you can look at how much your protection would cost (in terms of effort, money, etc.) and how this changes the expected damage.  This would be an ideal way to prioritize how to work on things.  So why don’t we do this?  Because the actual values for likelihood and impact aren’t really known in practice. So understanding “that things that are likely and high impact are really bad and need to be addressed” is going to be more useful in practice than the actual formula will be.
 
 > [!NOTE]
-> The Value of Precedence, Commentary by Andrew Martin:
+> **The Value of Precedence**, Commentary by Andrew Martin
 >
 > We have found it helpful to list the remediations and controls from a threat model in precedence order. The recipient of a threat model is likely to be a risk owner such as a CISO or equivalent holder of funds, and the model should inspire them to remediate immediate existential threats, or threats with unacceptable impacts on business functionality, and consider which of the other scoped threats are worth investing in.
 >
