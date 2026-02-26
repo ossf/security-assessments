@@ -1,6 +1,6 @@
 # Self-assessment
 
-Free-form description of the document's contents from the author's perspective.
+Summarize the document's purpose and status to orient readers.
 
 ## Self-assessment outline
 
@@ -103,7 +103,7 @@ This document serves to provide [project] users with an initial understanding of
 security, and general overview of [project] security practices, both for development of
 [project] as well as security of [project].
 
-This document provides the CNCF TAG-Security with an initial understanding of [project]
+This document provides readers with an initial understanding of [project]
 to assist in a joint-assessment, necessary for projects under incubation.  Taken
 together, this document and the joint-assessment serve as a cornerstone for if and when
 [project] seeks graduation and is preparing for a security audit.

@@ -5,7 +5,7 @@
 The properties of an attack will vary based on the avenue of the attack. Some actions an attacker can only perform once before detection, while others an attacker can do repeatedly. Some require specialized skills, while others can be done by anyone.
 
 > [!NOTE]
-> **From Improbable to Inevitable, Commentary by Justin Cappos**
+> **From Improbable to Inevitable**, Commentary by Justin Cappos
 >
 > It is helpful when thinking about attacks to really think outside the box. One exercise I like to do is to “prove” why an attack couldn’t happen. As I’m reasoning through it, I usually come up with the way in which the attack could occur.
 >
