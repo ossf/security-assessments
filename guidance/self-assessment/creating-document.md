@@ -18,6 +18,29 @@ If any elements interact with each other by design (such as in the second exampl
 
 Once you’ve determined the scope of your assessment, you’ll be ready to get started documenting it!
 
+## How much effort should this take?
+
+The honest answer is "it depends on the project," but rough expectations help you plan. Treat these as ballpark numbers for a *first* assessment; revisions are typically much faster.
+
+- **Small library or utility (one repo, one or two maintainers, narrow surface area):** 2–4 hours, often in a single sitting. Many sections will resolve to one or two sentences. The point is to produce *some* artifact; you can iterate on it later.
+- **Medium project (multi-component, small team):** 10–15 hours, usefully split across several sessions over a couple of weeks. Time is dominated by gathering information from different parts of the team rather than writing.
+- **Large project (multi-org, complex deployment, security-critical functionality):** 30+ hours, often spread over months. Expect to coordinate with multiple sub-teams, revisit early sections after later ones reveal new questions, and align on language with leadership before publishing.
+
+A useful self-check: if the very first session is taking more than a few hours and you're stuck, the scope is probably too large for a single assessment. Split it (see the Argo / Privateer examples above) and assess each piece separately.
+
+### A lightweight track for solo maintainers and small projects
+
+If you maintain a small project alone or with one or two collaborators, a full document can feel disproportionate. A workable lightweight track:
+
+1. Fill in the **Header** and **Metadata** sections — links to the repo, `SECURITY.md`, and any signed releases or SBOMs you publish.
+2. Write a few sentences each for **Background**, **Security Goals**, and **Security Non-goals** (Project Overview).
+3. List **Actors** and one paragraph on the most important **Actions**. A simple Mermaid diagram in the repo is plenty.
+4. Note any **Critical Security Components** (often: input validation, auth, the release pipeline).
+5. Confirm you have a **Responsible Disclosure** channel and write down what it is.
+6. Skip or stub the rest with `(How? — to revisit)` markers.
+
+That's a real, useful self-assessment. It will not impress an external reviewer, but it will catch gaps, give your users something to read, and produce a starting point for the next iteration.
+
 ## Format
 
 We will be creating our example self-assessment in Markdown because of its compatibility with open source repositories. This easy-to-learn format will be automatically parsed and beautified when loaded to repo hosts such as GitHub.
