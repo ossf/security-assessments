@@ -66,4 +66,4 @@ If your project lacks a comprehensive plan for incident response, then include a
 
 A clear incident response process ensures vulnerabilities are addressed efficiently while minimizing disruption.
 
-**[> Next Up: Security Considerations](./security-considerations.md)**
+**[> Next Up: Appendix](./appendix.md)**

@@ -1,6 +1,6 @@
 # Detection & Tracing
 
-**[< Previous: Comprehensive Coverage](./comprehensive-coverage.md)**
+**[< Previous: Comprehensive Coverage](../threat-modeling/comprehensive-coverage.md)**
 
 The core concept of defensive security is to take things that are damaging and either make them less likely or less impactful.
 

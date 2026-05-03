@@ -1,6 +1,6 @@
 # Recovery & Prevention
 
-**[< Previous: Recovery & Prevention](./recovery-and-prevention.md)**
+**[< Previous: Applying Mitigations](./applying-mitigations.md)**
 
 Downstream from detection and tracing is recovery, and then that concept naturally leads us back around to the thought of preventing a breach in the first place.
 

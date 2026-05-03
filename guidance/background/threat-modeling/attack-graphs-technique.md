@@ -1,10 +1,10 @@
 # Threat Modeling: Attack Graphs Technique
 
-**[< Previous: Goals](../goals.md)**
+**[< Previous: Goals](./goals.md)**
 
 Once you understand the potential attacker(s) and a goal, it is helpful to think through the ways in which they could achieve this.
 
-hile you can just sit and do this in whatever way you want, it is often useful to reason about this by brainstorming using a tool called an Attack Graph. This is also called an Attack Tree, Threat Tree, or Threat Graph in some literature.
+While you can just sit and do this in whatever way you want, it is often useful to reason about this by brainstorming using a tool called an Attack Graph. This is also called an Attack Tree, Threat Tree, or Threat Graph in some literature.
 
 An attack tree has at the top (which is called the root node), the goal of the attacker.
 

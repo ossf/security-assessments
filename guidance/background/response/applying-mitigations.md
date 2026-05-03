@@ -1,6 +1,6 @@
 # Applying Mitigations
 
-**[< Previous: Applying Mitigations](./applying-mitigations.md)**
+**[< Previous: Detection & Tracing](./detection-and-tracing.md)**
 
 Applying mitigations is usually not as simple as just choosing a set of mitigations and applying them to parts of your system. A common mistake that I see novice system designers make is to focus more on the quantity and type of security mechanisms added than focusing on where and why. You need to reason about the goals your system has and then figure out how to intelligently apply mechanisms and controls to meet those goals.
 
