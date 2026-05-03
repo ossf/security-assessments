@@ -43,6 +43,16 @@ For example, suppose that teller+guard and manager+guard have the same impact. I
 
 These space saving tips do not fully solve the problem though. Consider that the matrix we wrote before has the customer+guard row (such as above) as well as the potential for us to add a teller+manager+guard row. How do you know which row of the matrix to use? To make this clear to the reader you should sort the attack matrix so that the most impactful attacks are lower in the matrix. When reading an attack matrix and reasoning about a scenario, move down the matrix to find the lowest row that you match and then use this cell to determine the impact.
 
+## How the techniques fit together
+
+It's worth being explicit about how attack graphs, attack matrices, and DREAD compose, since the previous pages introduce them as separate techniques:
+
+- **Attack graphs** answer *how* an attacker reaches a goal. They are best for exploring a single goal in depth and for explaining attack paths to people who think visually.
+- **Attack matrices** answer *who+what* across a system: which combinations of compromised actors enable which impacts. They scale better than graphs when the actor count is large, and they are easier to keep complete because the structure forces you to consider every actor combination (and then prune systematically).
+- **DREAD** answers *how bad* a given attack is once you've identified it.
+
+A typical workflow uses all three: sketch a graph (or matrix) to enumerate paths; collapse and reduce the matrix using the rules above; score the surviving entries with DREAD (or another framework) to prioritize. Practitioners with experience often skip the graph stage on familiar systems and go straight to a matrix — but starting with a graph is a reliable way to build intuition on a system you don't yet know well.
+
 For more information about threat matrices, here are some references for further reading:
 
 - G. Almashaqbeh, A. Bishop and J. Cappos, "ABC: A Cryptocurrency-Focused Threat Modeling Framework," IEEE INFOCOM 2019 - IEEE Conference on Computer Communications Workshops (INFOCOM WKSHPS), 2019, pp. 859-864, doi: 10.1109/INFCOMW.2019.8845101. [(Link)](https://arxiv.org/abs/1903.03422)

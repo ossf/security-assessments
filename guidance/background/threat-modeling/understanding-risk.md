@@ -31,4 +31,23 @@ When addressing risks, you can look at how much your protection would cost (in t
 >
 > Expected damage is a useful metric for risk management at the executive level, and it can be modulated with the secondary data point of likelihood — existential risks should be addressed in some manner, but it’s also acceptable to mitigate them in other ways (such as transferral with disclaimers or insurance policies, or acceptance of low likelihood). Each mitigation is a complex tree of possibly catastrophic permutations and so should be explicitly addressed by the risk owner.
 
+## Making Impact Concrete
+
+Risk numbers stay abstract until you tie them to specific outcomes. When estimating impact, force yourself to write the answer out as a sentence rather than a score. For example, for a hypothetical vulnerability in a payment-processing library:
+
+> *"If exploited at scale, this would result in unauthorized transactions in the tens of millions of dollars range, would trigger mandatory customer notification under GDPR/state breach laws within 72 hours, would land the vendor in tech press for at least a week, would halt new customer onboarding for the duration of the patch cycle, and would likely cost two engineering teams a month of work to remediate and respond."*
+
+That sentence is more useful than any single score. It tells a leader what to prepare for, it tells engineering what to defend against, it tells legal and PR what to plan for. A score abstracts all of this away. Use scores to compare items in a list; use sentences when you need someone to act.
+
+## When You Need a Different Risk Framework
+
+The expected-damage formula is useful for first-pass prioritization. For more demanding contexts, several other frameworks are worth knowing about:
+
+- **[FAIR](https://www.fairinstitute.org/) (Factor Analysis of Information Risk)** translates risk into probabilistic monetary loss expectancy. It's the right tool when the audience is finance, legal, or executive leadership.
+- **[NIST SP 800-30](https://csrc.nist.gov/publications/detail/sp/800-30/rev-1/final)** provides a structured methodology for risk assessment commonly required in regulated industries.
+- **[Mozilla's Rapid Risk Assessment (RRA)](https://infosec.mozilla.org/guidelines/risk/rapid_risk_assessment.html)** is a 30–60 minute conversation-based method designed for teams that cannot afford a multi-week threat-modeling effort. A reasonable starting point for solo maintainers and small teams.
+- **[LINDDUN](https://linddun.org/)** is a privacy-focused framework. If your project handles personal data — even an open source library that processes user inputs — LINDDUN complements DREAD by surfacing privacy threats (linkability, identifiability, unawareness, non-compliance) that pure security frameworks miss. Note that LINDDUN is oriented toward privacy regulation compatibility, not vulnerability discovery.
+
+You don't need to commit to one framework. Most teams pick a primary and pull techniques from the others when the situation calls for it.
+
 **[> Up Next: Comprehensive Coverage](./comprehensive-coverage.md)**

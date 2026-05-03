@@ -17,8 +17,11 @@ For each actor, describe:
 - **Its role in the system** (e.g., a client application, an authentication service).
 - **How it interacts with other components** (e.g., via API calls, message queues).
 - **The isolation mechanisms in place** (e.g., separate authentication domains, network segmentation).
-  
+- **Whether the actor is unique or replicated** — "the database" can mean a single shared instance or one per tenant; the security implications are very different.
+
 Capturing all of these mechanisms is crucial, as these can prevent an attacker from moving laterally after a compromise.
+
+Resist vague descriptions. Saying *"the service stores user data in the database"* leaves the most important security questions unanswered: which database, who else has access to it, whether it's per-tenant or shared, and what happens if it's compromised. A good actor description tells the reader what would and would not still be safe if that actor were taken over.
 
 [+ Read More About Actors](../background/threat-modeling/actors.md)
 

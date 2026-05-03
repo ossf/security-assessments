@@ -1,8 +1,8 @@
-# Threat Modeling: Goals
+## Threat Modeling: Goals
 
 **[< Previous: Actions](./actions.md)**
 
-<!-- TODO: This section is titled "goals," but I don't understand why. It's about bad assumptions -->
+A *goal*, in threat-modeling terms, is a security property the system is trying to provide — what an attacker would have to violate to "score a point." Equally important is the inverse: the *non-goals,* and the *assumptions* the system relies on. An assumption that turns out to be false is the most common source of security surprise. This page covers all three.
 
 One of the most important things to do in threat modeling is to understand what an attacker can and cannot do based upon the access they have. In our concept of a “game” this is like the conditions by which the attacker gains points (by violating the goals you have for your system) and the legal moves that the attacker can make toward that end.
 
@@ -12,11 +12,13 @@ Assuming that you are being realistic in your attacker model, the stronger the s
 
 Note that this does not mean you should not implement controls in the following areas! It just means that long held assumptions on the efficacy of these measures should be restated and that they are better used as part of a layered approach to make things harder, instead of infallible controls. They should not be relied on alone to stop a skilled attacker.
 
-> [!IMPORTANT]
-> **Adapting to Modern System Boundaries**
->
-> STRIDE has been used for a long period of time, but unfortunately has portions that don’t apply as well to modern distributed systems. So the notion of escalating privilege could be thought better as the ability to move laterally (break the boundaries between actors) in a system. In other words, once an attacker gains access to X, are they able to find a way to get access to Y? This involves a failure to sufficiently compartmentalize X and Y from each other.
-> Also, the notions of spoofing and escalation should be thought of in an additional way that a reader may not initially consider. Distributed systems often use a concept called a token (also called a capability in some literature), where an API request contains information to authorize the transaction. In these cases, authentication is not needed. The API request token is sufficient to authorize access. This is much like a movie ticket being sufficient to grant access to a movie. There is no need to check the attendee’s identification, so long as they possess a valid ticket. So, for Eve to gain access to Bob’s data, it doesn’t necessarily mean that she must know Bob’s password. She may have just gained access to a token that some service uses to perform actions on behalf of Bob. She may even confuse the service into doing the actions she wants using Bob’s token. Of course, if tokens are not used and service X is just always trusted to do a set of actions, spoofing and escalation become trivial once you compromise a service!
+### Adapting to modern system boundaries
+
+STRIDE has been around for a long time and parts of it map awkwardly onto modern distributed systems. Two adjustments are worth making explicit:
+
+**Privilege escalation is usually lateral movement.** In a system composed of many isolated actors, the question is rarely "can an attacker become root?" — it's "once an attacker has compromised actor X, what other actors can they reach?" Escalation, in modern terms, is a failure to compartmentalize X from Y. If a compromised microservice can read another microservice's database, you have an escalation problem, regardless of OS-level privilege.
+
+**Spoofing and escalation often happen at the token, not the password.** Distributed systems authorize most requests with bearer tokens (also called *capabilities*) — an API key, a session token, an OIDC ID token, a SPIFFE SVID. Possessing the token is sufficient; identity is rarely re-checked. So for Eve to act as Bob, she does not need Bob's password — she needs a token a service is willing to accept on Bob's behalf, or she needs to confuse a service into using Bob's token to do something Eve wants. When you reason about Spoofing and Escalation of Privilege in a modern system, reason about how tokens are issued, scoped, transmitted, stored, and revoked — not just about login credentials.
 
 ## Common Assumptions
 
@@ -76,9 +78,17 @@ It turns out that it is often not that difficult to escalate privilege when gain
 
 It turns out that becoming a man-in-the-middle is possible in many scenarios, including wireless attacks in a coffee shop, BGP route hijacking, DNS cache poisoning, etc. While it isn’t trivial for any person to become a man-in-the-middle for a network path between two randomly selected computers, it certainly isn’t unobtainable for a large and important class of attackers.
 
-### Software provided by dependencies are secure so long as we take care when adding them
+### Software provided by dependencies is secure so long as we take care when adding them
 
-Attackers in some ecosystems have begun attacking software projects by taking over a dependency and adding malicious code. In other cases, a dependency is simply neglected for a long time and does not receive security patches. In yet other cases, an organization simply forgets or neglects to update dependencies to a later version so that a vulnerable version remains in use. Like the software your organization writes itself, dependencies need care, examination, and attention so that they do not become liabilities.
+The realistic stance today is the opposite: assume that some dependency in your tree *will* be compromised at some point in the project's lifetime. Attacks of this kind have become routine — direct dependency takeovers (e.g., maintainer-account compromises on npm/PyPI), typosquatting, malicious updates pushed to widely-used packages, and compromised build systems that inject code into otherwise-clean source. Neglected dependencies that simply never receive security patches are a quieter version of the same problem.
+
+Practical mitigations to consider:
+
+- **Pin and lock.** Use lockfiles or equivalent to ensure builds reproduce exactly the dependencies you reviewed. Floating version ranges turn an upstream compromise into an immediate downstream compromise.
+- **Generate and consume SBOMs** so you can answer "which of our releases included version X of dependency Y?" in minutes when an advisory drops.
+- **Compartmentalize untrusted code.** Run parsers, plugins, and other dependency-heavy code in sandboxes, separate processes, or with reduced privileges where possible.
+- **Monitor advisories** for your dependency tree (GitHub Dependabot, OSV, ecosystem-specific feeds) and budget time for patching as ongoing maintenance.
+- **Verify provenance** (signatures, attestations) where the ecosystem supports it, rather than trusting the registry alone.
 
 ### Firewalls keep out bad guys
 

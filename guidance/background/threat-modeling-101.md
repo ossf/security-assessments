@@ -21,4 +21,34 @@ One way that we reason about security in a rigorous way is a process called thre
 
 Note that the term bug and vulnerability are not the same thing. While many bugs do enable an attacker to launch a successful attack, many bugs are just anomalous, benign behavior.  Similarly, a design flaw can cause a correctly implemented system to have a vulnerability. So, there need not be a bug in order to have a vulnerability.
 
+## Start with a Data Flow Diagram
+
+Before reasoning about who might attack the system, sketch how the system actually works. A Data Flow Diagram (DFD) — boxes for components, arrows for data movement, dashed lines for trust boundaries — is the cheapest way to surface the parts of a system that get overlooked in conversation. Third-party services, CI/CD pipelines, telemetry endpoints, build caches, and package registries all tend to appear once you put pen to paper and disappear when you don't.
+
+A DFD does not need to be elaborate or polished. A whiteboard photograph or a [Mermaid](https://github.blog/developer-skills/github/include-diagrams-markdown-files-mermaid/) diagram in your repo is enough. The goal is to give yourself and reviewers a single shared picture of *what crosses what trust boundary,* so the rest of the threat-modeling work has something concrete to operate on.
+
+## How This Section is Organized
+
+The pages that follow build on each other. You can read them out of order if you already know the territory, but the natural progression is:
+
+1. **[Goals](./threat-modeling/goals.md)** — what security properties the system is trying to provide, and what is explicitly out of scope.
+2. **[Actors](./threat-modeling/actors.md)** — the components and external parties that interact with the system.
+3. **[Actions](./threat-modeling/actions.md)** — what those actors do, and which of those actions matter for security.
+4. **[Attack graphs](./threat-modeling/attack-graphs-technique.md)** — enumerating *how* an attacker might reach a goal.
+5. **[DREAD](./threat-modeling/dread-technique.md)** — scoring *how bad* a given attack would be.
+6. **[Comprehensive coverage](./threat-modeling/comprehensive-coverage.md)** — checking that you have not missed an important class of attack.
+7. **[Understanding risk](./threat-modeling/understanding-risk.md)** — translating technical findings into business risk.
+
+## Threat Modeling in the Wider Landscape
+
+The framework presented here is one of several. You may also encounter:
+
+- **[STRIDE](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-threats)** — a checklist of threat categories (Spoofing, Tampering, Repudiation, Information disclosure, Denial of service, Elevation of privilege).
+- **[PASTA](https://owasp.org/www-pdf-archive/PASTA-Tour.pdf)** — a seven-stage, business-impact-driven process.
+- **[MITRE ATT&CK](https://attack.mitre.org/)** — a catalog of real-world attacker tactics and techniques, especially useful for incident response and detection planning.
+- **[CVSS](https://www.first.org/cvss/) and [EPSS](https://www.first.org/epss/)** — vulnerability severity scoring and exploit-likelihood prediction, respectively. Useful when prioritizing remediation of *known* vulnerabilities, less so when designing the system in the first place.
+- **[LINDDUN](https://linddun.org/)** — a STRIDE-style framework focused on privacy threats; worth a look if your project handles personal data.
+
+These overlap rather than compete. Most teams pick one as a primary framework and pull techniques from the others as needed.
+
 **[> Next Up: Threat Modeling Actors](./threat-modeling/actors.md)**

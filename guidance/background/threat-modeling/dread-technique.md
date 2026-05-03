@@ -42,10 +42,22 @@ Let’s dive into what each impact category means:
 | **Affected Users** | Which users does this attack impact? | No users = 0<br>All users across privilege levels = 10 |
 | **Discoverability** | How easy is it to discover? | Difficult to discover = 0<br>Easy to discover = 10 |
 
-DREAD framework eases the threat treatment by putting a number value to the threats in a criteria that novice professionals are also familiar with and could articulate, thus limiting the barrier to entry. While the framework looks seamingly simple, the accurate analysis in complex ecosystems needs extensive information security expertise with up to date knowledge in the domain.
+DREAD framework eases the threat treatment by putting a number value to the threats in a criteria that novice professionals are also familiar with and could articulate, thus limiting the barrier to entry. While the framework looks seemingly simple, accurate analysis in complex ecosystems needs extensive information security expertise with up-to-date knowledge in the domain. The simple appearance is itself a hazard: a junior reviewer can produce confident-looking scores that mislead the rest of the team. Treat the numbers as discussion prompts, not as ground truth.
 
 In practice, many security experts argue that discoverability is both hard to quantify and so often gotten wrong.  As a result, it is suggested to use DREAD without trying to estimate D (Discoverability).  To do this, you would always mark Discoverability as a 10.
 
-For more information on the DREAD model, refer to DREAD (risk assessment model) - Wikipedia.
+For more information on the DREAD model, refer to [DREAD (risk assessment model) on Wikipedia](https://en.wikipedia.org/wiki/DREAD_(risk_assessment_model)).
+
+## When DREAD Is the Wrong Tool
+
+DREAD is one of several risk-scoring approaches and it is not always the best fit. A quick comparison:
+
+- **DREAD** scores the *impact* of attacks you have already enumerated. It is at its best during design and assessment, when you are working through an attack graph and need a way to compare findings against each other.
+- **CVSS / EPSS** score the severity and exploit-likelihood of *known vulnerabilities*. They're built for triaging incoming CVEs in software you depend on, not for designing your own system.
+- **MITRE ATT&CK** is a catalog of *real-world adversary tactics and techniques*. It is most useful for incident response, detection engineering, and red-teaming — not for early-design impact scoring.
+- **FAIR** (Factor Analysis of Information Risk) translates risk into *monetary loss expectancy.* It is the right tool when the audience is finance, legal, or executive leadership rather than engineers.
+- **Rapid Risk Assessment (RRA)** is a lightweight, ~30–60 minute conversation-based method designed by Mozilla for resource-constrained teams who can't afford a multi-week threat-modeling effort. It's a reasonable starting point for a small project or a small team.
+
+If your goal is to compare attacks during design: DREAD or RRA. If your goal is to triage CVEs or plan detection: CVSS/EPSS and ATT&CK. If your goal is to brief leadership on risk in dollars: FAIR. Most mature programs use more than one.
 
 **[> Up Next: Understanding Risk](./understanding-risk.md)**

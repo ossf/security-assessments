@@ -20,4 +20,16 @@ Define what your project explicitly does not aim to achieve. This helps set real
 
 For example: "Flibble does not intend to stop a party with a key from storing an arbitrarily large amount of data, possibly incurring financial cost or overwhelming the servers."
 
+## In-scope Threat Actors
+
+State, in the same place, who you are defending against and who you are not. Frame this in terms of *capability,* not job title — capability is what determines whether a defense works, and it transfers cleanly across deployments.
+
+Useful capability axes include:
+
+- **Position** — outsider on the public network, authenticated user, fellow tenant in a shared deployment, insider with code-commit rights, supply-chain attacker who can compromise an upstream dependency.
+- **Resources** — opportunistic attacker with commodity tooling vs. a well-resourced adversary willing to spend significant time and money.
+- **Access to side channels** — physical access to the host, ability to observe network timing, ability to read logs.
+
+Then state the explicit non-goals: e.g., *"We do not defend against an attacker who has root on the host running our software,"* or *"We do not defend against a malicious maintainer with merge rights."* Naming the threats you have decided not to address is just as important as naming the ones you have.
+
 **[> Next Up: System Design](./system-design.md)**

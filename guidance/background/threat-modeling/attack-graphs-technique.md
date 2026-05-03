@@ -1,10 +1,10 @@
 # Threat Modeling: Attack Graphs Technique
 
-**[< Previous: Goals](../goals.md)**
+**[< Previous: Goals](./goals.md)**
 
 Once you understand the potential attacker(s) and a goal, it is helpful to think through the ways in which they could achieve this.
 
-hile you can just sit and do this in whatever way you want, it is often useful to reason about this by brainstorming using a tool called an Attack Graph. This is also called an Attack Tree, Threat Tree, or Threat Graph in some literature.
+While you can just sit and do this in whatever way you want, it is often useful to reason about this by brainstorming using a tool called an Attack Graph. This is also called an Attack Tree, Threat Tree, or Threat Graph in some literature.
 
 An attack tree has at the top (which is called the root node), the goal of the attacker.
 
@@ -40,6 +40,15 @@ In the next stage, we can see that the goal of learning the combination can be a
 > You can think of the exercise of writing out an attack graph like writing out your multiplication tables by hand before you have them memorized. Eventually it may become second nature, but it will be an immense help at first. If you’re starting out, I strongly encourage you to start with attack trees though and get practice with them. This will help you build the foundation you need to do more accurate threat assessments.
 
 One problem with attack graphs is you don’t necessarily know how complete they are. There are a wide array of things that you haven’t thought of. Be sure to think back to your system goals carefully and focus on them. When you reason about the situations where those goals hold, think about what those situations mean for an attacker. How is the attacker constrained? What can the attacker do? You may need to update the goals and other parts of the writeup as you go through this process.
+
+A useful self-audit is to walk back up the graph from each leaf and ask:
+
+- *What did I assume the attacker could **not** do here?* If that assumption breaks, what new branch appears?
+- *What other actors in the system could reach this same goal by a different route?* The graph for "open safe" focuses on the safe; an attacker who can compromise the auditor instead may bypass the safe entirely.
+- *What if two leaves are individually low-cost for the attacker but combine into a high-impact path?* Real attackers chain.
+- *What if the leaf is itself the entry point of another graph?* (e.g., "compromise CI" might be a leaf here and the *root* of a separate graph about how CI gets compromised.)
+
+For a software example: if your goal is "exfiltrate customer database," obvious leaves include SQL injection and stolen credentials. Less obvious leaves: a malicious dependency added in a feature branch; a maintainer-account takeover that adds an exfil endpoint; an over-permissioned CI job that already has read access. A first-pass graph that includes only the obvious leaves is not wrong, but it is incomplete in a way the self-audit above is designed to catch.
 
 There is a depth of material on attack trees that focuses on adding parameters of different types to them. They can do things like help you reason about what attackers with different skill sets / access / constraints might do in a system or how much an attack might cost an attacker. As you are working through examples, you may find it useful to refer to the following reference: Schneier, B. “Attack Trees.” Schneier on Security, Dr. Dobb's Journal, December 1999, https://www.schneier.com/academic/archives/1999/12/attack_trees.html.
 
