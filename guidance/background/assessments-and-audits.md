@@ -13,6 +13,8 @@ chisel into the mortar around a safe to see if it can be removed, understand if 
 
 One final note is that the terms “audit” and “assessment” are not universally used this way in all literature. So if you read them elsewhere, please consult the author’s definition.
 
+To translate the bank analogy back into software: an *assessment* might conclude that a project does not consistently validate untrusted input at its API boundary, that release artifacts are not signed, and that there is no documented process for revoking a compromised maintainer credential. An *audit* of the same project might find a specific SQL injection in `getUserById()` at line 487, an XSS in the search results page, and a hardcoded API key in a test fixture. Both findings are real and useful; they just live at different altitudes.
+
 ## Pros and Cons
 
 There are merits to both audits and assessments. As a result, the best security firms will do both sorts of analysis (to different levels of detail) on a software project.
@@ -32,5 +34,26 @@ To understand the difference between assessments and audits consider the followi
 On the surface, the audit sounds more pertinent at any particular moment because it has an actual example of a serious problem. The downside stems from the fact that an audit focuses on what someone found at that moment, it is even the case that different audits may lead to quite different results. For example, security firm A’s audit may have caught Eve’s embezzling, while security firm B’s audit finds out that Tom the teller has a gambling problem and has been skimming deposits (i.e., stealing cash when a deposit is made). The two firms who did different audits found different problems, which is expected. With audits, you really don’t know of any underlying deficiencies other than the bugs they found. In contrast, with a security assessment, you tend to focus on macro-level concerns and procedures at TrashPanda Bank. You may tighten up your personnel controls, which may lead to Eve silently stopping her behavior as she knows she would be caught and Tom the teller taking a job at another bank. So, although acting upon the results of an assessment may mitigate or prevent these issues from arising, you may never detect occurrences of a problem explicitly from an assessment.  The assessment flags potential problems, but it is difficult to count or measure avoided bugs and vulnerabilities. This makes the value of a security assessment require more effort to quantify, such as factoring reduction of structural risk and mitigation of losses by reducing the likelihood and severity of a negative outcome should problems occur.
 
 In the end, we recommend projects initially perform a security self-assessment before engaging with any specific audit process.  Security assessments provide durable guidance which can continue to pay dividends over the lifetime of a project -- a better value for the maintainer time investment.
+
+## Working with third-party audit firms
+
+Even with a strong assessment in hand, many projects eventually want a third-party audit, often paid for by a foundation, a downstream commercial user, or the project's own employer. Firms such as NCC Group, Trail of Bits, Cure53, and X41 specialize in this kind of work; foundations including OSTIF and the OpenSSF have funded audits of widely-used open source projects.
+
+A few things worth knowing before commissioning one:
+
+- A good audit firm will ask for your assessment first. Hand them a complete self-assessment and they spend their time finding bugs instead of reverse-engineering your architecture. This is often the difference between a useful report and an expensive one.
+- Audits typically combine static analysis, manual code review, dynamic testing, and (sometimes) light fuzzing or exploit development. Different firms emphasize different mixes; ask up front.
+- Most firms follow a coordinated-disclosure window so the project can patch before findings go public. Agree on the window in writing.
+- Closed-source teams use the same firms — the workflow is largely identical, with the addition of an NDA.
+
+## How long is an assessment valid?
+
+A self-assessment or joint assessment can stay useful for years, but it is not timeless. A useful rule of thumb:
+
+- **Still valid:** language-version bumps, minor refactors, dependency updates, build-system changes, new deployment targets that don't change the trust model.
+- **Worth a refresh:** a year or two has passed and nobody has re-read it; the project has added significant new functionality; the maintainer set has turned over.
+- **Should be redone:** the authentication or authorization model has changed; a new external trust boundary has been introduced (e.g., a new SaaS dependency, a plugin system, a new public API); the project has merged with or absorbed another codebase; a serious incident has occurred.
+
+A reasonable default is to revisit the assessment **every 12–24 months**, or sooner on any of the "should be redone" triggers above. Recording the last-reviewed date in the assessment metadata makes this easy to track.
 
 **[> Next Up: Security Basics](./security-basics.md)**

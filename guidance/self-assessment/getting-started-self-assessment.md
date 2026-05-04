@@ -25,7 +25,7 @@ In this guide, we’re looking to secure an open source project repository. Simi
 
 This guide will walk you through the process of creating your own security self-assessment documentation.
 
-We will be following the recommendations provided by the Cloud Native Computing Foundation to their myriad of open source software projects. The standard of self-assessment is required by the CNCF for incubating and graduating projects, and it is incentivized by the Cloud Native Security Slam for all CNCF projects to revisit their self-assessment annually.
+The format that follows was originally developed for the Cloud Native Computing Foundation, where a self-assessment is required for incubating and graduating projects. The same structure works just as well for any open source project — and for closed-source teams who want a durable internal record of their security posture. Wherever this guide says "project," read it as your software, regardless of license, governance model, or ecosystem.
 
 Anyone familiar with your project can contribute to the creation of the self-assessment, but it is important that the effort contains a high level of engagement from the project’s leadership—a full review and endorsement at minimum—to ensure that nothing is missed and that any findings are incorporated into the project roadmap.
 
@@ -47,5 +47,7 @@ Here are the items we’ll be creating:
 ## Let's Dive In
 
 If you feel like you aren’t ready to begin with your self-assessment, consider why that might be the case. If you feel that your project isn’t ready, or you don’t have all the answers right now, don’t let that stop you from starting! Simply leave notes along the way so that you have a strong first iteration of the self-assessment.
+
+A useful technique is to mark unfinished sections with a `(How?)` placeholder rather than leaving them blank. A section that says *"User passwords are stored hashed. (How? — confirm with the auth team which algorithm and parameters)"* tells a future reader far more than an empty heading: it captures what's known, flags what's not, and gives the next contributor an obvious entry point.
 
 **[> Next Up: Header Content](./header.md)**

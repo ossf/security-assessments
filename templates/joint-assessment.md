@@ -3,18 +3,19 @@
 The joint-assessment is built on top of the [self-assessment](self-assessment.md) to
 collaboratively assess the current security state of a project.
 
-The burden is primarily on the proposing project to demonstrate it is secure in
-a manner that is understandable to the broader community.  The
-[reviewers](security-reviewer.md) will help to assess and probe the design.
+The burden is primarily on the project being assessed to demonstrate it is
+secure in a manner that is understandable to its users and reviewers. The
+[reviewers](../guidance/joint-assessment/roles/reviewer.md) will help to assess
+and probe the design.
 
-The proposing project must provide a written document that describes the project
-and its security.  The document must contain the following information, at a
-minimum. Where security considerations do not fit into the outline below, if
-possible, add a sub-section such that the additional content conforms to the
-general flow of the joint assessment.
+The project must provide a written document that describes the project and its
+security. The document must contain the following information, at a minimum.
+Where security considerations do not fit into the outline below, if possible,
+add a sub-section such that the additional content conforms to the general flow
+of the joint assessment.
 
-Projects are encouraged to cross link additional supporting documents or details
-from their repo into the self-assessment.
+Projects are encouraged to cross-link additional supporting documents or details
+into this document.
 
 ## Joint-assessment of [Project]
 
@@ -98,29 +99,28 @@ or overwhelming the servers)
 
 Intended use statement. For example:
 
-> The joint-assessment is initially created by the project team and then
-collaboratively developed with the [security reviewers](security-reviewer.md) as
-part of the project's TAG-Security Security Assessment (TSSA) Process.
-Information about the TAG-Security Review can be found in the [CNCF TAG-Security
-Review Process Guide](./README.md).
+> The joint-assessment is initially created by the `project` team and then
+collaboratively developed with the security reviewers as part of the project's
+security joint assessment. Information about the process can be found in the
+guides provided by the OpenSSF [Open Source Project Security Assessments](https://github.com/ossf/security-assessments)
+project.
 >
-> This document does not intend to provide a security audit of [project] and is
-not intended to be used in lieu of a security audit.  This document provides
-users of [project] with a security focused understanding of [project] and when
-taken with the [self-assessment](self-assessment.md) provide the community with
-the TAG-Security Review of the project.  Both of these documents may be used and
-references as part of a security audit.
+> This document does not intend to provide a security audit of `project` and is
+not intended to be used in lieu of a security audit. It provides readers with a
+security-focused understanding of `project`, and may be used as a reference to
+supplement a security audit.
 
 ## Intended Use
 
 * Operation.  A description of the operational aspects of the system, such as
   how keys are likely to be managed and stored.
 
-* Target Users and Use Cases. Provide a mapping from [standard
-personas](../../usecase-personas) to the nomenclature used in your project docs
-(which you should then use consistently for the remainder of this document).
-Describe the scenarios in which the project is expected to be used. This must be
-specific enough to provide context for analysis. For example:
+* Target Users and Use Cases. Identify the personas (e.g., end user,
+administrator, integrator, operator) that interact with the project, and map
+them to the nomenclature used in your project docs — then use that nomenclature
+consistently for the remainder of this document. Describe the scenarios in
+which the project is expected to be used. This must be specific enough to
+provide context for analysis. For example:
 
 > Flibble can be used in any cloud environment.  Three diverse examples are as
 follows:
@@ -130,7 +130,7 @@ follows:
 >    2. a Flibble cloudlet may be run on virtualized fog hardware near smartphone
 >       users.
 >    3. a Flibble distributed service may serve as a backend for a Notary image
->       registry.)
+>       registry.
 
 ## Project Design
 
@@ -185,7 +185,7 @@ If any audits already exist, link them here with the appropriate dates.
 A discussion about the likely goals of an attacker as  well as the kind of
 attacker (do not forget to include discussion of insider threat with trusted
 access to the project).  This likely relates closely to the impact of different
-attacks in the scenarios.  For exmaple: In the password hash case, the attacker wants
+attacks in the scenarios.  For example: In the password hash case, the attacker wants
 to expose those hashes on the Flibble server.  However, a Flibble cloudlet
 attacker may find it more interesting to bring down the service.
 
@@ -220,8 +220,8 @@ will include areas where attacks compromise all meaningful security.  (e.g., If
 an attacker is able to compromise the “main” Flibble server, they may read,
 write, or delete any content stored on any system).  This should be stated in
 terms that are accessible to a reader that does not fully understand the system.
-Hence, "a compromised main Flibble key lets and attacker push and pull widgets"
-is less useful than saying "compromised main Flibble key lets an attacker
+Hence, "a compromised main Flibble key lets an attacker push and pull widgets"
+is less useful than saying "a compromised main Flibble key lets an attacker
 execute arbitrary code on client machines using the Flibble server".
 
 ### Compensating Mechanisms
@@ -236,7 +236,7 @@ attack.  It is important to have clear documentation that explains what types of
  of the offline Flibble keys must be used in order to sign new Flibble metadata
 to revoke the older server key.  This new metadata should be distributed to
  clients using the Flibble widget create operation as soon as is feasible as in
-the interim clients will tryst the compromised server, enabling an attacker to
+the interim clients will trust the compromised server, enabling an attacker to
 serve them outdated widgets that are known to be defective.
 
 ## Threat Model
@@ -308,17 +308,18 @@ and the format below should be used for reporting details.
 General comments and summary of the hands-on assessment with any recommendations
 worth noting.  If nothing found, follow the below example:
 
-> TAG-Security's hands-on assessment did not reveal any significant or notable
-security findings for [project]. This outcome does not indicate that none exist,
-rather that none were discovered.
+> The hands-on assessment did not reveal any significant or notable security
+findings for [project]. This outcome does not indicate that none exist, rather
+that none were discovered.
 
 ## Roadmap
 
 * Project Next Steps. Link to your general roadmap, if available, then list
   prioritized next steps that may have an impact on the risk profile of your
 project, including anything that was identified as part of this assessment.
-* CNCF Requests. In the initial draft, please include whatever you believe the
-  CNCF could assist with that would increase security of the ecosystem.
+* Support Requests. In the initial draft, please include whatever you believe
+  your community, foundation, or other supporting organization could assist
+  with that would increase security of the ecosystem.
 
 ## Appendix
 
