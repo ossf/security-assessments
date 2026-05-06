@@ -34,8 +34,8 @@ The pages that follow build on each other. You can read them out of order if you
 1. **[Goals](./threat-modeling/goals.md)** — what security properties the system is trying to provide, and what is explicitly out of scope.
 2. **[Actors](./threat-modeling/actors.md)** — the components and external parties that interact with the system.
 3. **[Actions](./threat-modeling/actions.md)** — what those actors do, and which of those actions matter for security.
-4. **[Attack graphs](./threat-modeling/attack-graphs-technique.md)** — enumerating *how* an attacker might reach a goal.
-5. **[DREAD](./threat-modeling/dread-technique.md)** — scoring *how bad* a given attack would be.
+4. **[Reasoning About Attack Vectors](./threat-modeling/attack-graphs-technique.md)** — enumerating *how* an attacker might reach a goal.
+5. **[Assessing Impact](./threat-modeling/dread-technique.md)** — scoring *how bad* a given attack would be.
 6. **[Comprehensive coverage](./threat-modeling/comprehensive-coverage.md)** — checking that you have not missed an important class of attack.
 7. **[Understanding risk](./threat-modeling/understanding-risk.md)** — translating technical findings into business risk.
 
