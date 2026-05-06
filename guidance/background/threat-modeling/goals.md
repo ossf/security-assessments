@@ -2,7 +2,7 @@
 
 **[< Previous: Actions](./actions.md)**
 
-A *goal*, in threat-modeling terms, is a security property the system is trying to provide — what an attacker would have to violate to "score a point." Equally important is the inverse: the *non-goals,* and the *assumptions* the system relies on. An assumption that turns out to be false is the most common source of security surprise. This page covers all three.
+A *goal*, in threat-modeling terms, is a security property the system is trying to provide — what an attacker would have to violate to "score a point." Equally important is the inverse: the *non-goals*, which are things that are considered out of scope. Tied into these are the *assumptions* the system relies on. An assumption that turns out to be false is the most common source of security surprise. This page covers all three.
 
 One of the most important things to do in threat modeling is to understand what an attacker can and cannot do based upon the access they have. In our concept of a “game” this is like the conditions by which the attacker gains points (by violating the goals you have for your system) and the legal moves that the attacker can make toward that end.
 
@@ -18,7 +18,7 @@ STRIDE has been around for a long time and parts of it map awkwardly onto modern
 
 **Privilege escalation is usually lateral movement.** In a system composed of many isolated actors, the question is rarely "can an attacker become root?" — it's "once an attacker has compromised actor X, what other actors can they reach?" Escalation, in modern terms, is a failure to compartmentalize X from Y. If a compromised microservice can read another microservice's database, you have an escalation problem, regardless of OS-level privilege.
 
-**Spoofing and escalation often happen at the token, not the password.** Distributed systems authorize most requests with bearer tokens (also called *capabilities*) — an API key, a session token, an OIDC ID token, a SPIFFE SVID. Possessing the token is sufficient; identity is rarely re-checked. So for Eve to act as Bob, she does not need Bob's password — she needs a token a service is willing to accept on Bob's behalf, or she needs to confuse a service into using Bob's token to do something Eve wants. When you reason about Spoofing and Escalation of Privilege in a modern system, reason about how tokens are issued, scoped, transmitted, stored, and revoked — not just about login credentials.
+**Spoofing and escalation often happen at the token, not the password.** Distributed systems authorize most requests with bearer tokens (also called *capabilities*) — such as an API key, a session token, an OIDC ID token, or a SPIFFE SVID. Possessing the token is sufficient; identity is rarely re-checked. So for Eve to act as Bob, she does not need Bob's password — she needs a token a service is willing to accept on Bob's behalf, or she needs to confuse a service into using Bob's token to do something Eve wants. When you reason about Spoofing and Escalation of Privilege in a modern system, reason about how tokens are issued, scoped, transmitted, stored, and revoked — not just about login credentials.
 
 ## Common Assumptions
 
@@ -85,7 +85,7 @@ The realistic stance today is the opposite: assume that some dependency in your 
 Practical mitigations to consider:
 
 - **Pin and lock.** Use lockfiles or equivalent to ensure builds reproduce exactly the dependencies you reviewed. Floating version ranges turn an upstream compromise into an immediate downstream compromise.
-- **Generate and consume SBOMs** so you can answer "which of our releases included version X of dependency Y?" in minutes when an advisory drops.
+- **Generate and consume SBOMs** so you can answer "which of our releases included version X of dependency Y?" in minutes when an advisory drops.  However, take care to ensure the SBOMs you produce and consume are accurate.  This means using tools that capture information during the build phase, not using source composition analysis (SCA).
 - **Compartmentalize untrusted code.** Run parsers, plugins, and other dependency-heavy code in sandboxes, separate processes, or with reduced privileges where possible.
 - **Monitor advisories** for your dependency tree (GitHub Dependabot, OSV, ecosystem-specific feeds) and budget time for patching as ongoing maintenance.
 - **Verify provenance** (signatures, attestations) where the ecosystem supports it, rather than trusting the registry alone.

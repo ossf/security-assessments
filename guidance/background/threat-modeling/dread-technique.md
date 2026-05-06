@@ -42,7 +42,7 @@ Let’s dive into what each impact category means:
 | **Affected Users** | Which users does this attack impact? | No users = 0<br>All users across privilege levels = 10 |
 | **Discoverability** | How easy is it to discover? | Difficult to discover = 0<br>Easy to discover = 10 |
 
-DREAD framework eases the threat treatment by putting a number value to the threats in a criteria that novice professionals are also familiar with and could articulate, thus limiting the barrier to entry. While the framework looks seemingly simple, accurate analysis in complex ecosystems needs extensive information security expertise with up-to-date knowledge in the domain. The simple appearance is itself a hazard: a junior reviewer can produce confident-looking scores that mislead the rest of the team. Treat the numbers as discussion prompts, not as ground truth.
+DREAD framework eases the threat treatment by putting a number value to the threats in a criteria that novice professionals are also familiar with and could articulate, thus limiting the barrier to entry. While the framework seems simple, accurate analysis in complex ecosystems needs extensive information security expertise with up-to-date knowledge in the domain. The simple appearance is itself a hazard: a junior reviewer can produce confident-looking scores that mislead the rest of the team. Treat the numbers as discussion prompts, not as ground truth.
 
 In practice, many security experts argue that discoverability is both hard to quantify and so often gotten wrong.  As a result, it is suggested to use DREAD without trying to estimate D (Discoverability).  To do this, you would always mark Discoverability as a 10.
 
