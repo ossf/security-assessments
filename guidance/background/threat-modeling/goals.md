@@ -84,7 +84,7 @@ The realistic stance today is the opposite: assume that some dependency in your 
 
 Practical mitigations to consider:
 
-- **Pin and lock.** Use lockfiles or equivalent to ensure builds reproduce exactly the dependencies you reviewed. Floating version ranges turn an upstream compromise into an immediate downstream compromise.
+- **Pin versions.** Pinning your dependencies versions to a specific commit ID protects in the event of a compromise in the upstream delivery mechanisms. Alternatively, some ecosystems provide immutable releases which will provide a similar protection.
 - **Generate and consume SBOMs** so you can answer "which of our releases included version X of dependency Y?" in minutes when an advisory drops.  However, take care to ensure the SBOMs you produce and consume are accurate.  This means using tools that capture information during the build phase, not using source composition analysis (SCA).
 - **Compartmentalize untrusted code.** Run parsers, plugins, and other dependency-heavy code in sandboxes, separate processes, or with reduced privileges where possible.
 - **Monitor advisories** for your dependency tree (GitHub Dependabot, OSV, ecosystem-specific feeds) and budget time for patching as ongoing maintenance.
