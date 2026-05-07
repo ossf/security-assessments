@@ -19,6 +19,8 @@ In every case the actor list looks daunting at first. The next sections describe
 
 For example, for many systems a party that can control the network has similar capabilities in many cases independent of whether they control routers, BGP, or DNS. So, for threat models that focus on higher level communication properties between actors over higher level network protocols, the distinction of exactly how an actor controls the network may not matter.
 
+Similarly, many models can separate the _software supply chain_ (maintainers, source control, build systems, library dependencies) from software execution. Segmenting the threat model in this way reduces the number of actor interactions that need to be considered -- rather than "maintainer impacts user", "build impacts user", and "library impacts user" cases, they can be summarized as "compromised software package impacts user".
+
 ## Is It Good Or Bad To Have Many Actors?
 
 You may think that having more actors automatically makes a system have better or worse security properties. There are two factors that lead to having many actors and they impact the security of a system in opposing ways.
