@@ -24,5 +24,5 @@ It is typically advised to do a self assessment prior to a joint assessment, bec
 
 You can read more about the requirements, process, and outputs from each level:
 
-- **[> Get Started: Self Assessment](../../self/quickstart.md)**
-- **[> Get Started: Joint Assessment](../../joint/quickstart.md)**
+- **[Get Started: Self Assessment](../../self-assessment/getting-started-self-assessment.md)**
+- **[Get Started: Joint Assessment](../../joint-assessment/creating-document.md)**
