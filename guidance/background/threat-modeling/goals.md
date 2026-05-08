@@ -4,8 +4,6 @@
 
 A *goal*, in threat-modeling terms, is a security property the system is trying to provide — what an attacker would have to violate to "score a point." Equally important is the inverse: the *non-goals*, which are things that are considered out of scope. Tied into these are the *assumptions* the system relies on. An assumption that turns out to be false is the most common source of security surprise. This page covers all three.
 
-One of the most important things to do in threat modeling is to understand what an attacker can and cannot do based upon the access they have. In our concept of a “game” this is like the conditions by which the attacker gains points (by violating the goals you have for your system) and the legal moves that the attacker can make toward that end.
-
 ## System Goals
 
 Assuming that you are being realistic in your attacker model, the stronger the set of moves the attacker can make, the more secure your system is. To understand why, let’s say that TrashPanda Bank made the assumption that all of its employees were trustworthy and did their job flawlessly. If it turns out that one of the employees is malicious or makes a mistake, then you are now outside the bounds of what you have considered in your assessment. It is as though a player of the game you set up made a move that you thought was not legal, when you did your analysis! This means you don’t have a way of understanding what the impact of an attack would be or whether your security will hold.
