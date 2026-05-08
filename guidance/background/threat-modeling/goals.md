@@ -1,4 +1,4 @@
-## Threat Modeling: Goals
+# Threat Modeling: Goals
 
 **[< Previous: Actions](./actions.md)**
 
