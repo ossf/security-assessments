@@ -1,7 +1,5 @@
 # Threat Modeling: Attack Graphs Technique
 
-**[< Previous: Goals](./goals.md)**
-
 Once you understand the potential attacker(s) and a goal, it is helpful to think through the ways in which they could achieve this.
 
 While you can just sit and do this in whatever way you want, it is often useful to reason about this by brainstorming using a tool called an Attack Graph. This is also called an Attack Tree, Threat Tree, or Threat Graph in some literature.
@@ -58,5 +56,3 @@ There is a depth of material on attack trees that focuses on adding parameters o
 > For some clients or colleagues Attack Graphs and Trees are a valued deliverable. They are most valued by visual learners and non-technical persons as a tangible representation of what is elaborated on in a Threat Matrix. An Attack Graph helps a reader easily follow from initial breach to the attacker’s goal, and identify which nodes on the graph may be a hotspot either for traversal to other goals, or is used in many possible routes to the same point of impact. This provides a quantifiable justification for the controls used to remediate the threat of attack.
 >
 > Attack Graphs can be intensive to build out and maintain, so it is recommended to use a solution that can generate Attack Graphs from code.
-
-**[> Next Up: DREAD Technique](./dread-technique.md)**

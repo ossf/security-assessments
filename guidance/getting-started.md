@@ -50,6 +50,4 @@ This applies whether the project you're evaluating is an open source dependency,
 
 ### If you're still not ready to get started
 
-As with many things in security there is often not one “correct answer”, despite there being infinite wrong answers. If you would like to ask questions or help improve this guidance, please don't hesitate to engage through the designated [community channels](../CONTRIBUTING.md).
-
-**[> Next up: Security Assessments and Audits](./background/assessments-and-audits.md)**
+As with many things in security there is often not one “correct answer”, despite there being infinite wrong answers. If you would like to ask questions or help improve this guidance, please don't hesitate to engage through the designated [community channels](https://github.com/ossf/security-assessments/tree/main/CONTRIBUTING.md).

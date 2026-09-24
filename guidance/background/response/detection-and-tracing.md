@@ -1,7 +1,5 @@
 # Detection & Tracing
 
-**[< Previous: Comprehensive Coverage](../threat-modeling/comprehensive-coverage.md)**
-
 The core concept of defensive security is to take things that are damaging and either make them less likely or less impactful.
 
 To better reason about this, we will look at several capabilities that a defender often retains even when attacked. Note that this is not an exhaustive list, but these are the most common properties that exist today, so deserve emphasis. The capabilities we will discuss in detail are detection, non-repudiation, recovery, and prevention.
@@ -25,5 +23,3 @@ In computer security, this is usually done by having something called non-repudi
 So, as you can see non-repudiation is essential for post-attack forensics and should be a goal for any systems with multiple actors.
 
 Note, it is possible to have differing amounts of non-repudiation and detection in a system. If TrashPanda Bank counts money for the whole bank at the end of each day, the bank may be able to quickly detect if something does not add up. However, this does not mean that they will know who is responsible. Conversely, if TrashPanda Bank has video recordings for all time, but never checks them, then they will not detect problems well, but when they do can figure out exactly what occurred.
-
-**[> Next Up: Applying Mitigations](./applying-mitigations.md)**

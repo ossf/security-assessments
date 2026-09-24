@@ -49,5 +49,3 @@ Here are the items we’ll be creating:
 If you feel like you aren’t ready to begin with your self-assessment, consider why that might be the case. If you feel that your project isn’t ready, or you don’t have all the answers right now, don’t let that stop you from starting! Simply leave notes along the way so that you have a strong first iteration of the self-assessment.
 
 A useful technique is to mark unfinished sections with a `(How?)` placeholder rather than leaving them blank. A section that says *"User passwords are stored hashed. (How? — confirm with the auth team which algorithm and parameters)"* tells a future reader far more than an empty heading: it captures what's known, flags what's not, and gives the next contributor an obvious entry point.
-
-**[> Next Up: Header Content](./header.md)**

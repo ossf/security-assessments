@@ -1,7 +1,5 @@
 # Project Overview
 
-**[< Previous: Metadata Content](./metadata.md)**
-
 This section introduces your project and its purpose, helping reviewers quickly understand its significance and context.
 
 ## Background
@@ -31,5 +29,3 @@ Useful capability axes include:
 - **Access to side channels** — physical access to the host, ability to observe network timing, ability to read logs.
 
 Then state the explicit non-goals: e.g., *"We do not defend against an attacker who has root on the host running our software,"* or *"We do not defend against a malicious maintainer with merge rights."* Naming the threats you have decided not to address is just as important as naming the ones you have.
-
-**[> Next Up: System Design](./system-design.md)**

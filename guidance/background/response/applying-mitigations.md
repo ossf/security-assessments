@@ -1,7 +1,5 @@
 # Applying Mitigations
 
-**[< Previous: Detection & Tracing](./detection-and-tracing.md)**
-
 Applying mitigations is usually not as simple as just choosing a set of mitigations and applying them to parts of your system. A common mistake that I see novice system designers make is to focus more on the quantity and type of security mechanisms added than focusing on where and why. You need to reason about the goals your system has and then figure out how to intelligently apply mechanisms and controls to meet those goals.
 
 To understand why, let’s go back to TrashPanda Bank and think about their security. If they buy and deploy the latest alarm system, but apply it to the manager’s snack drawer instead of the bank vault, they will not get the desired security benefits!
@@ -20,5 +18,3 @@ It is important to have a system that degrades gracefully under attack. This mea
 Note that you need to consider lateral movement in a system very carefully when thinking about a system degrading gracefully. If the ability to do X gives one the ability to do Y, then security does not degrade gracefully with respect to these two. If you can only get Y by obtaining the capability for X and Z (which are compartmentalized), then you have actually made the attacker’s life harder than compromising X if their goal is Y.
 
 Another really key thing to do is to protect all access to something sensitive. (This concept is called complete mediation.) If TrashPanda Bank has a well fortified vault entrance with guards, etc. but has an unlocked, unmonitored window in the vault, the attacker will likely just use that. Violations of complete mediation are extremely common in systems where security was not designed in from the start. The reason is that the defenders may be unaware of an inappropriately secured action or be unable to secure some set of actions due to design flaws.
-
-**[> Next Up: Security Assessments](./assessments.md)**

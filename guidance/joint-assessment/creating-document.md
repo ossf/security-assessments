@@ -37,7 +37,7 @@ This phase often surfaces the most valuable findings even though it produces no 
 
 ### 3. Reviewer analysis
 
-Reviewers (the lead included) work through the system using the techniques from the [Threat Modeling](../background/threat-modeling-101.md) section: actors, actions, attack graphs, attack matrices, DREAD, comprehensive coverage. Each reviewer collects findings in three categories:
+Reviewers (the lead included) work through the system using the techniques from the [Threat Modeling](../background/threat-modeling/index.md) section: actors, actions, attack graphs, attack matrices, DREAD, comprehensive coverage. Each reviewer collects findings in three categories:
 
 - **Clarifying questions** — items where the reviewer needs more from the project before reaching a conclusion.
 - **Feedback for the project** — proposed changes, recommendations, hardening opportunities.
@@ -76,7 +76,7 @@ A refresh is much lighter than the original. The structure exists, the actors ar
 
 ## Format and structure
 
-Use the [joint-assessment template](/templates/joint-assessment.md) as the starting point. The template captures the structure used in published joint assessments, but the structure is a guide, not a constraint — adapt it where the shape of your project demands it.
+Use the [joint-assessment template](template/joint-assessment.md) as the starting point. The template captures the structure used in published joint assessments, but the structure is a guide, not a constraint — adapt it where the shape of your project demands it.
 
 ## What you can expect from the process
 
