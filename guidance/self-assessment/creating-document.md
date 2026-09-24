@@ -50,5 +50,3 @@ You may simplify the self-assessment process by starting (and potentially stayin
 ## Publishing
 
 Where you publish is up to you to determine, as your project may have different processes for distributing information to stakeholders, such as contributors, maintainers, owners, and users. If your assessment is part of a larger organization, all assessment documentation should be maintained in a centralized location for quick reference by the community, its technical advisors, and its leadership.
-
-

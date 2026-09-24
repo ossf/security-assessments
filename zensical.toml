@@ -82,9 +82,12 @@ toggle.name = "Switch to system preference"
 # icon = "fontawesome/brands/mastodon"
 # link = "https://fosstodon.org/@user"
 
+# Redirect pages; in particular our top-level page is "getting started"
+[project.plugins.redirects.redirect_maps]
+"index.md" = "getting-started.md"
+
 [project.plugins.awesome-nav]
 filename = ".nav.yaml"
-
 
 [project.markdown_extensions]
 abbr = {}

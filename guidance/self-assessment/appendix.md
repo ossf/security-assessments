@@ -49,7 +49,7 @@ Example:
 
 If your project uses the OpenSSF Scorecard, include a reference to your latest score.
 
-\[+ View OpenSSF Scorecard](https://github.com/ossf/scorecard)
+[+ View OpenSSF Scorecard](https://github.com/ossf/scorecard)
 
 ---
 

@@ -1,7 +1,3 @@
----
-weight: 1
----
-
 # Threat Modeling 101
 
 Security is one of the most critical properties to have in computing today. Unfortunately, it is also one of the most misunderstood. A common mistake people make is to tout something as “secure” or “insecure”. This doesn’t make a lot of sense because it is missing an important context: the scenario.
