@@ -1,7 +1,5 @@
 # Threat Modeling: Actions
 
-**[< Previous: Actors](./actors.md)**
-
 In addition to understanding the actors, it is important to know what actions they perform. This should include the actions that are desirable (at a high level) and how they are carried out, including any checks and balances.
 
 For example, in TrashPanda Bank, customers may have a list of actions they perform such as opening an account, withdrawing money, checking a balance, renting a safety deposit box, visiting their safety deposit box, and making a deposit. For each of these actions, there needs to be a detailed description of how the process works and how the various steps are verified by different parties.
@@ -23,5 +21,3 @@ The manager is then called by the teller, who re-checks the client’s identific
 Note that increased complexity of actions does tend to correlate with insecurity, at least if you ignore the complexity added by security steps. A system which does a few simple things is easier to secure in most cases.
 
 Please don’t mistake this for saying that fewer API calls or system calls means better security. If that were true, we could just have one API call that takes an argument telling it what action to actually perform! This would be a case where the complexity of the API isn’t well reflected by the number of API calls.
-
-**[> Next Up: Goals](./goals)**

@@ -1,7 +1,5 @@
 # DREAD Technique
 
-**[< Previous: Attack Graphs Technique](./attack-graphs-technique.md)**
-
 The properties of an attack will vary based on the avenue of the attack. Some actions an attacker can only perform once before detection, while others an attacker can do repeatedly. Some require specialized skills, while others can be done by anyone.
 
 > [!NOTE]
@@ -59,5 +57,3 @@ DREAD is one of several risk-scoring approaches and it is not always the best fi
 - **Rapid Risk Assessment (RRA)** is a lightweight, ~30–60 minute conversation-based method designed by Mozilla for resource-constrained teams who can't afford a multi-week threat-modeling effort. It's a reasonable starting point for a small project or a small team.
 
 If your goal is to compare attacks during design: DREAD or RRA. If your goal is to triage CVEs or plan detection: CVSS/EPSS and ATT&CK. If your goal is to brief leadership on risk in dollars: FAIR. Most mature programs use more than one.
-
-**[> Up Next: Understanding Risk](./understanding-risk.md)**

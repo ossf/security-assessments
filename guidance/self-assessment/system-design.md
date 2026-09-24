@@ -1,12 +1,10 @@
 # System Design
 
-**[< Previous: Project Overview](./project-overview.md)**
-
 This section provides an overview of the system and its distinct parts, helping reviewers understand how different components interact and where security boundaries exist.
 
 ## System Actors
 
-[Actors](guidance/background/threat-modeling/actors.md) are the individual components or entities within your system that interact to provide its functionality.
+[Actors](../background/threat-modeling/actors.md) are the individual components or entities within your system that interact to provide its functionality.
 
 In this situation, Actors are not equivalent to Threat Actors. Instead of looking at the human element (actors using different parts of the system), this is looking at functional elements that are able to act upon each other.
 
@@ -44,7 +42,7 @@ If you have a more complex system, you may want to create a chart using a free t
 [draw.io](draw.io) or using GitHub flavored markdown you can make a diagram using a
 [mermaid chart](https://github.blog/developer-skills/github/include-diagrams-markdown-files-mermaid/).
 
-[+ Read More About Actions](guidance/background/threat-modeling/actions.md)
+[+ Read More About Actions](../background/threat-modeling/actions.md)
 
 ## Security Functions and Features
 
@@ -76,5 +74,3 @@ Examples:
 
 - **Configurable logging settings** – Helps detect and respond to incidents.
 - **TLS enforcement** – Ensures secure communication.
-
-**[> Next Up: Development & Support](./development-and-support.md)**

@@ -1,7 +1,5 @@
 # Threat Modeling: Goals
 
-**[< Previous: Actions](./actions.md)**
-
 A *goal*, in threat-modeling terms, is a security property the system is trying to provide — what an attacker would have to violate to "score a point." Equally important is the inverse: the *non-goals*, which are things that are considered out of scope. Tied into these are the *assumptions* the system relies on. An assumption that turns out to be false is the most common source of security surprise. This page covers all three.
 
 ## System Goals
@@ -167,5 +165,3 @@ To aid in going through different cases, there is a model called STRIDE. STRIDE 
 > DFDs also enhance communication, clarifying system data handling and risks to stakeholders, aiding in prioritizing security measures. Clear, understandable DFDs are vital for all involved to identify key components and understand control paths.
 >
 > For instance, a DFD for TrashPanda Bank would map money flow, highlighting entry/exit points, customer involvement, asset storage, trust boundaries, and processes like bank teller and ledger operations. This facilitates comprehensive threat analysis, examining potential data interception/manipulation points, and assessing security measure effectiveness, ensuring robust protection against security threats.
-
-**[> Next Up: Attack Graphs](./attack-graphs-technique.md)**

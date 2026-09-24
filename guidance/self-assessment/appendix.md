@@ -1,7 +1,5 @@
 # Appendix
 
-**[< Previous: Development & Support](./development-and-support.md)**
-
 This section provides references and additional information that may benefit readers, including historical security data, project comparisons, and best practice alignment.
 
 ## Known Issues Over Time
@@ -12,7 +10,7 @@ If the project has encountered vulnerabilities in the past, summarize key statis
 - Number of security fixes in past releases
 - Metrics from static analysis or fuzzing tests
 
-[+ View Security Issue Tracker](../security/issues.md)
+\[+ View Security Issue Tracker](../security/issues.md)
 
 ## OpenSSF Best Practices
 
@@ -31,7 +29,7 @@ Provide real-world examples of how the project has been used. These scenarios he
 Example:
 > *A financial institution integrated Flibber to encrypt cloud-based virtual machines, reducing unauthorized access incidents by 85%.*
 
-[+ Read More Case Studies](../case-studies/index.md)
+\[+ Read More Case Studies](../case-studies/index.md)
 
 ## Related Projects & Vendors
 
@@ -45,7 +43,7 @@ Example:
 
 > *Flibber vs. Noodles: Unlike Noodles, Flibber provides built-in encryption without requiring additional configuration.*
 
-[+ Read More Comparisons](../comparisons/index.md)
+\[+ Read More Comparisons](../comparisons/index.md)
 
 ## OpenSSF Scorecard
 
@@ -56,5 +54,3 @@ If your project uses the OpenSSF Scorecard, include a reference to your latest s
 ---
 
 This appendix serves as a reference point for stakeholders, helping them understand the project's security history, ecosystem positioning, and best practice compliance.
-
-**[> Next Up: Self Assessment Template](/templates/self-assessment.md)**

@@ -1,7 +1,5 @@
 # Threat Modeling: Actors
 
-**[< Previous: Threat Modeling 101](../threat-modeling-101.md)**
-
 We need a term to describe the parties in the system that perform all of the actions in the system and might be erroneous, compromised, or just plain malicious. We call these actors and the things they do actions. It is important to enumerate these up front as they are effectively the “players” in the threat modeling game.
 
 Back in earlier days of computing, many computer systems were fairly isolated from each other and programs needed to be secure in this environment. Hence the number of actors was small, often just a server, a client, and an attacker. In modern systems that consist of many distributed and isolated components, the number of actors can be very large.
@@ -38,5 +36,3 @@ A key aspect to consider is the mechanism by which actors are compartmentalized 
 Note that this also may depend on the deployment environment. Perhaps some deployments share storage for Alice and Bob for cost reasons. This is important to highlight, as it will become relevant later when we think about the impact of attacks.
 
 One more note is that having different levels of compartmentalization between actors is common in a system. Most systems have a trusted actor who is responsible for indicating who the other actors are in the system. (This is often a party like a CA, root of trust, root key, or similar.)  As a result, this trusted actor can effectively issue false credentials and pretend to be any other party. In contrast, the other actors in the system may have strong isolation between them, making the act of compromising them effectively independent attacks that must be carried out. This degree to which the isolation between parties contains a compromise can be a critical aspect of the system’s security.
-
-**[> Next Up: Actions](./actions.md)**

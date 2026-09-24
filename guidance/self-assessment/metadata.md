@@ -1,7 +1,5 @@
 # Metadata Content
 
-**[< Previous: Header Content](./header.md)**
-
 The first full entry in your self-assessment will be the metadata values—key quick-view information about your project. These metadata fields provide essential context for stakeholders reviewing your security posture and project status.
 
 ## Fields
@@ -46,5 +44,3 @@ List any security standards or compliance frameworks the project adheres to (e.g
 Provide links to the project's security-related documentation. At a minimum, include a link to security-insights.yml or any other security policies, threat models, or vulnerability management resources.
 
 As usual, formatting is less important than clear communication with your stakeholders. If this is better broken into a table or sub-sections, feel free to make that decision for your use case.
-
-**[> Next Up: Project Overview](./project-overview.md)**

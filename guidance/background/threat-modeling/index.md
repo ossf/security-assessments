@@ -1,6 +1,4 @@
-# Threat Modeling
-
-**[< Previous: Security Basics](./security-basics.md)**
+# Threat Modeling 101
 
 Security is one of the most critical properties to have in computing today. Unfortunately, it is also one of the most misunderstood. A common mistake people make is to tout something as “secure” or “insecure”. This doesn’t make a lot of sense because it is missing an important context: the scenario.
 
@@ -31,13 +29,13 @@ A DFD does not need to be elaborate or polished. A whiteboard photograph or a [M
 
 The pages that follow build on each other. You can read them out of order if you already know the territory, but the natural progression is:
 
-1. **[Goals](./threat-modeling/goals.md)** — what security properties the system is trying to provide, and what is explicitly out of scope.
-2. **[Actors](./threat-modeling/actors.md)** — the components and external parties that interact with the system.
-3. **[Actions](./threat-modeling/actions.md)** — what those actors do, and which of those actions matter for security.
-4. **[Reasoning About Attack Vectors](./threat-modeling/attack-graphs-technique.md)** — enumerating *how* an attacker might reach a goal.
-5. **[Assessing Impact](./threat-modeling/dread-technique.md)** — scoring *how bad* a given attack would be.
-6. **[Comprehensive coverage](./threat-modeling/comprehensive-coverage.md)** — checking that you have not missed an important class of attack.
-7. **[Understanding risk](./threat-modeling/understanding-risk.md)** — translating technical findings into business risk.
+1. **[Goals](./goals.md)** — what security properties the system is trying to provide, and what is explicitly out of scope.
+2. **[Actors](./actors.md)** — the components and external parties that interact with the system.
+3. **[Actions](./actions.md)** — what those actors do, and which of those actions matter for security.
+4. **[Reasoning About Attack Vectors](./attack-graphs-technique.md)** — enumerating *how* an attacker might reach a goal.
+5. **[Assessing Impact](./dread-technique.md)** — scoring *how bad* a given attack would be.
+6. **[Comprehensive coverage](./comprehensive-coverage.md)** — checking that you have not missed an important class of attack.
+7. **[Understanding risk](./understanding-risk.md)** — translating technical findings into business risk.
 
 ## Threat Modeling in the Wider Landscape
 
@@ -50,5 +48,3 @@ The framework presented here is one of several. You may also encounter:
 - **[LINDDUN](https://linddun.org/)** — a STRIDE-style framework focused on privacy threats; worth a look if your project handles personal data.
 
 These overlap rather than compete. Most teams pick one as a primary framework and pull techniques from the others as needed.
-
-**[> Next Up: Threat Modeling Actors](./threat-modeling/actors.md)**

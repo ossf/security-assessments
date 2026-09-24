@@ -1,0 +1,8 @@
+nav:
+- getting-started.md
+- background
+- self-assessment
+- joint-assessment
+
+# Add items that aren't in nav to the bottom
+append_unmatched: true

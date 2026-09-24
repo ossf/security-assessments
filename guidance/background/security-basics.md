@@ -1,7 +1,5 @@
 # Security Basics
 
-**[< Previous: Security Assessements and Audits](./assessments-and-audits.md)**
-
 There are many foundational concepts and technologies needed to understand to reason about security of an application or library, and there are countless other resources available to elevate understanding on various topics. Where possible this content will link out to existing content rather than replicate it. If you encounter an unfamiliar term in the text, pause to establish basic understanding of the term before continuing.
 
 Fundamentally, you should understand key concepts like integrity, non-repudiation, privacy, authentication, authorization, and trust. The [Cloud Native Security Lexicon](https://contribute.cncf.io/community/tags/security-and-compliance/publications/security-lexicon) has a quick overview of basic terms and concepts in computer security which covers these items, and an exhaustive set of definitions can be found in [NIST CSRC Glossary](https://csrc.nist.gov/glossary/).
@@ -43,5 +41,3 @@ The last important concept to understand is the fundamental ways in which people
 > For example, the principle of simplicity indicates that the simpler the component, the easier it is to reason about it and thus secure it. Suppose that TrashPanda bank’s system designer learns of this and decides to remove the need to verify client ID cards to simplify the system. Now anyone can withdraw money from anyone else’s account, trivially! This “simplification” has clearly made the system’s security worse.
 >
 > So, instead think about the principles when looking at a design and reason if the security would be better or worse if they were followed. Usually, following the design principles will guide you toward security.
-
-**[> Next Up: Threat Modeling 101](./threat-modeling-101.md)**

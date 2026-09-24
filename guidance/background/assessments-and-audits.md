@@ -1,7 +1,5 @@
 # Security Assessements and Audits
 
-**[< Previous: Getting Started](../getting-started.md)**
-
 When looking at security, there are different levels at which you can do this. Roughly speaking, a security assessment can be thought of as examining the security architecture and posture of a software project. While the tooling, implementation strategy, deployment, etc. are important to a security assessment, the assessment is often detached from a specific deployment and the implementation itself. It focuses more on whether a software project as a whole is doing the sorts of things that lead to security.
 
 Let’s now consider an example security assessment using a real world example of a bank called TrashPanda Bank. TrashPanda Bank is a brick-and-mortar bank without any computers, which allows one to focus on non-technical attacks and defenses. A security assessment would look at a TrashPanda’s security by examining the blueprints, vault types, alarm systems, accounting practices, policies for vetting employees, etc.
@@ -55,5 +53,3 @@ A self-assessment or joint assessment can stay useful for years, but it is not t
 - **Should be redone:** the authentication or authorization model has changed; a new external trust boundary has been introduced (e.g., a new SaaS dependency, a plugin system, a new public API); the project has merged with or absorbed another codebase; a serious incident has occurred.
 
 A reasonable default is to revisit the assessment **every 12–24 months**, or sooner on any of the "should be redone" triggers above. Recording the last-reviewed date in the assessment metadata makes this easy to track.
-
-**[> Next Up: Security Basics](./security-basics.md)**

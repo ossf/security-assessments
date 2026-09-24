@@ -1,7 +1,5 @@
 # Understanding Risk
 
-**[< Previous: DREAD Technique](./dread-technique.md)**
-
 A very useful concept when thinking about security assessments is the concept of risk. Rather than simply categorize things as possible and impossible, risk lets us try to understand how likely they are. If you have two equally negative outcomes which could be addressed with the same amount of effort, the more likely one is the one to focus on first.
 
 Unfortunately, there really isn’t a solid way to know how likely certain events are in computer systems. These are uncommon events and advances that attackers make lead to huge advances in attack capabilities. However, in general, most people underestimate unlikely events. To be blunt, the state of the field is commonly that one tries to list existing anecdotal examples and once that occurs in a sufficiently public way, everyone seems to agree that this is now something to be concerned about.
@@ -49,5 +47,3 @@ The expected-damage formula is useful for first-pass prioritization. For more de
 - **[LINDDUN](https://linddun.org/)** is a privacy-focused framework. If your project handles personal data — even an open source library that processes user inputs — LINDDUN complements DREAD by surfacing privacy threats (linkability, identifiability, unawareness, non-compliance) that pure security frameworks miss. Note that LINDDUN is oriented toward privacy regulation compatibility, not vulnerability discovery.
 
 You don't need to commit to one framework. Most teams pick a primary and pull techniques from the others when the situation calls for it.
-
-**[> Up Next: Comprehensive Coverage](./comprehensive-coverage.md)**

@@ -1,11 +1,11 @@
 # Joint-assessment Outline
 
-The joint-assessment is built on top of the [self-assessment](self-assessment.md) to
+The joint-assessment is built on top of the [self-assessment](../../self-assessment/template/self-assessment.md) to
 collaboratively assess the current security state of a project.
 
 The burden is primarily on the project being assessed to demonstrate it is
 secure in a manner that is understandable to its users and reviewers. The
-[reviewers](../guidance/joint-assessment/roles/reviewer.md) will help to assess
+[reviewers](../roles/reviewer.md) will help to assess
 and probe the design.
 
 The project must provide a written document that describes the project and its
@@ -70,7 +70,7 @@ You may use the table below as an example:
 
 ## Overview
 
-This section can be pulled from the [self-assessment](self-assessment.md) and
+This section can be pulled from the [self-assessment](../../self-assessment/template/self-assessment.md) and
 updated.
 
 One or two sentences describing the project -- something memorable and accurate

@@ -1,7 +1,5 @@
 # Header Content
 
-**[< Previous: Getting Started](./getting-started-self-assessment.md)**
-
 Let's kick things off by putting in some basic information about the project and the assessment itself.
 
 ## Header & Opening
@@ -19,5 +17,3 @@ If you're using a word processor like Google Docs or Microsoft Word, take advant
 For Markdown-based documentation, you can create self-referencing links within the document—these will become functional once the relevant sections exist.
 
 Expect to revisit and update the table of contents after adding content. If you introduce new subsections for complex topics, be sure to reflect those changes here. If your document significantly expands upon the template, AI tools may assist in generating or updating the table of contents efficiently.
-
-**[> Next Up: Metadata Content](./metadata.md)**

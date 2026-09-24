@@ -1,7 +1,5 @@
 # Development & Support
 
-**[< Previous: System Design](./system-design.md)**
-
 This section describes the development practices, communication channels, and security processes that support the project’s lifecycle. Providing this information helps reviewers understand how security is managed throughout development and maintenance.
 
 ## Development Pipeline
@@ -65,5 +63,3 @@ If your project lacks a comprehensive plan for incident response, then include a
 - **Remediation** – How do you develop and distribute patches or updates?
 
 A clear incident response process ensures vulnerabilities are addressed efficiently while minimizing disruption.
-
-**[> Next Up: Appendix](./appendix.md)**

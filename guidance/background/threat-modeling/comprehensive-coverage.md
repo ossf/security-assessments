@@ -1,7 +1,5 @@
 # Comprehensive Coverage
 
-**[< Previous: Understanding Risk](./understanding-risk.md)**
-
 One common problem is that it is easy to miss one or more cases when doing threat modeling. With distributed systems that have many components, this problem becomes much more common. The reason is that there are many different combinations of components that could be compromised by an attacker and used collectively to do nefarious things.
 
 For example, suppose that in TrashPanda Bank suppose that the vault is locked and may only be unlocked by the manager’s key and a key from any one of the tellers. People going into the vault are also checked by a security guard to ensure they are escorted in by the manager. All vault entry and exit times are logged by the security guard. The security guard notifies the manager when the customer leaves so that the manager and teller may retrieve their keys and re-lock the vault, which the guard confirms to the manager.
@@ -62,5 +60,3 @@ For more information about threat matrices, here are some references for further
 Volume 153, 2020, Pages 406-440, ISSN 0140-3664,
 [(Link)](https://www.sciencedirect.com/science/article/pii/S0140366419318493)
 - Zhang, L., Taal, A., Cushing, R. et al. "A risk-level assessment system based on the STRIDE/DREAD model for digital data marketplaces." Int. J. Inf. Secur. 21, 509–525 (2022). [(Link)](https://doi.org/10.1007/s10207-021-00566-3)
-
-**[> Next Up: Detection & Tracing](../response/detection-and-tracing.md)**
