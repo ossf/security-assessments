@@ -1,4 +1,4 @@
-# Security Assessements and Audits
+# Security Assessments and Audits
 
 When looking at security, there are different levels at which you can do this. Roughly speaking, a security assessment can be thought of as examining the security architecture and posture of a software project. While the tooling, implementation strategy, deployment, etc. are important to a security assessment, the assessment is often detached from a specific deployment and the implementation itself. It focuses more on whether a software project as a whole is doing the sorts of things that lead to security.
 
