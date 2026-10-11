@@ -1,5 +1,5 @@
 [project]
-site_url = "https://www.example.com/"
+site_url = "https://security-assessments.openssf.org/"
 site_name = "OpenSSF Security Assessments Guide"
 # site_description = "Your project description"
 
@@ -9,7 +9,7 @@ docs_dir = "guidance"
 
 repo_url = "https://github.com/ossf/security-assessments"
 repo_name = "ossf/security-assessments"
-edit_uri = "edit/main/docs/"
+edit_uri = "edit/main/guidance/"
 
 # extra_css = ["stylesheets/extra.css"]
 # extra_javascript = ["javascripts/extra.js"]
