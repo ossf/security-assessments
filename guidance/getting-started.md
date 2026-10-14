@@ -44,7 +44,7 @@ The sections describing how to use an assessment and how to have your project as
 
 ### You are evaluating the security posture of a project with a published security assessment
 
-You, the consumer of this hard work, need to understand how best to benefit from a security assessment. The section on consuming assessments is exactly what you need. It may also be useful to read the following section on Security Assessments and Audits, to understand the difference and why you should expect to see relatively few CVEs raised after a security assessment versus a security audit.
+You, the consumer of this hard work, need to understand how best to benefit from a security assessment. The section on [using an assessment](background/response/using-an-assessment.md) is exactly what you need. It may also be useful to read the following section on Security Assessments and Audits, to understand the difference and why you should expect to see relatively few CVEs raised after a security assessment versus a security audit.
 
 This applies whether the project you're evaluating is an open source dependency, a commercial vendor's product, or an internal piece of software your own organization is reviewing — the same questions you ask of an external project apply to your own.
 
